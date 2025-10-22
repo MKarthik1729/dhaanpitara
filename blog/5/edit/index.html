@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html class="js" lang="en" style="height: auto; min-height: 100%;"><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Edit Blog - Admin | DAANPITARA</title>
+<!-- Tell the browser to be 
+   to screen width -->
+<style>
+                div.dt-buttons
+                {
+                display: none!important;
+                }
+        </style>
+<meta content="DaanPitara" name="description"/>
+<meta content="DaanPitara" name="keywords"/>
+<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '');
+    </script>
+<!-- Facebook Pixel Code -->
+<script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '');
+      fbq('track', 'PageView');
+    </script>
+<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+<noscript>
+<img src="https://www.facebook.com/tr?id=&amp;ev=PageView&amp;noscript=1" style="display:none"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+<link href="../../../_assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> <!-- Bootstrap 3.3.7 -->
+<link href="../../../_assets/css/datepicker.css" rel="stylesheet"/>
+<link href="../../../_assets/images/favicon/favicon.png" rel="icon" type="image/icon"/> <!-- favicon-icon -->
+<link href="../../../_assets/admin/css/select2.min.css" rel="stylesheet"/> <!-- Font Awesome -->
+<link href="../../../_assets/admin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../../../_assets/css/fontawesome-iconpicker.min.css" rel="stylesheet"/>
+<link href="../../../_assets/admin/css/jquery-ui.css" rel="stylesheet"/>
+<!-- Ionicons -->
+<link href="../../../_assets/admin/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet"/>
+<!-- DataTables -->
+<link href="../../../_assets/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet"/> <!-- Theme style -->
+<link href="../../../_assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+<link href="../../../_assets/admin/dist/css/AdminLTE.min.css" rel="stylesheet"/>
+<link href="../../../_assets/css/toggle.css" rel="stylesheet"/>
+<link href="../../../_assets/css/component.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_assets/css/normalize.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_assets/admin/plugins/pace/pace.min.css" rel="stylesheet"/>
+<link href="../../../_assets/admin/dist/css/skins/_all-skins.min.css" rel="stylesheet"/>
+<link href="../../../_assets/admin/css/bootstrap-toggle.min.css"/>
+<link href="../../../_assets/css/animate.min.css" rel="stylesheet"/><!-- Custom Css -->
+<link href="../../../_assets/admin/css/admin.css" rel="stylesheet"/>
+<link href="../../../_assets/css/custom-style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" rel="stylesheet"/>
+<link href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css" rel="stylesheet"/>
+<style>.cke{visibility:hidden;}</style><script id="mce_2" referrerpolicy="origin" src="https://cdn.tiny.cloud/1/lc8j1na7vxkpyh5hpm9fjvlv06bp7o8j7yt74441zwk7hs07/tinymce/5.3.2-85/plugins/bullist/plugin.min.js" type="text/javascript"></script><link href="https://cdn.tiny.cloud/1/lc8j1na7vxkpyh5hpm9fjvlv06bp7o8j7yt74441zwk7hs07/tinymce/5.3.2-85/skins/ui/oxide/skin.min.css" id="u0" referrerpolicy="origin" rel="stylesheet" type="text/css"/></head>
+<body class="skin-blue sidebar-mini fixed sidebar-mini-expand-feature pace-done" style="height: auto; min-height: 100%;"><div class="pace pace-inactive"><div class="pace-progress" data-progress="99" data-progress-text="100%" style="transform: translate3d(100%, 0px, 0px);">
+<div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div class="wrapper" style="height: auto; min-height: 100%;">
+<header class="main-header">
+<!-- Logo -->
+<a class="logo" href="https://www.daanpitara.org">
+<!-- mini logo for sidebar mini 50x50 pixels -->
+<span class="logo-mini">
+<img alt="" src="../../../_assets/images/favicon/favicon.png" title="DAANPITARA" width="20px"/>
+</span>
+<!-- logo for regular state and mobile devices -->
+<span class="logo-lg"> <img alt="" src="../../../_assets/images/logo/logo_1752269544daanpitaralogo.png" title="DAANPITARA" width="100px"/></span>
+</a>
+<!-- Header Navbar: style can be found in header.less -->
+<nav class="navbar navbar-static-top">
+<!-- Sidebar toggle button-->
+<a class="sidebar-toggle" data-toggle="push-menu" href="#" role="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<div class="navbar-custom-menu">
+<ul class="nav navbar-nav">
+<!-- Messages: style can be found in dropdown.less-->
+<li class="dropdown admin-nav language">
+<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-globe"></i> en</button>
+<ul class="dropdown-menu animated flipInX">
+<li><a href="https://www.daanpitara.org/language-switch/en">English (en) </a></li>
+</ul>
+</li>
+<!-- User Account: style can be found in dropdown.less -->
+<li><a class="visit site" href="https://www.daanpitara.org" target="_blank">Visit Site</a></li>
+<li class="dropdown user user-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+<img alt="" class="user-image" src="../../../_assets/images/user_img/1753469114Snapchat-871174712.jpg"/>
+<span class="hidden-xs">Hi ! Asheesh</span>
+</a>
+<ul class="dropdown-menu">
+<!-- User image -->
+<li class="user-header">
+<img alt="User Image" class="img-circle" src="../../../_assets/images/user_img/1753469114Snapchat-871174712.jpg"/>
+<br/>
+<p>
+                   Asheesh
+                    <small>Member Since: 16th July 2025</small>
+</p>
+</li>
+<li class="user-footer">
+<div class="pull-left">
+<a class="btn btn-default btn-flat" href="https://www.daanpitara.org/user/edit/7">Profile</a>
+</div>
+<div class="pull-right">
+<a class="btn btn-default btn-flat" href="https://www.daanpitara.org/logout" onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
+                    Logout
+                    </a>
+<form action="https://www.daanpitara.org/logout" autocomplete="off" id="logout-form" method="POST">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/> </form>
+</div>
+</li>
+</ul>
+</li>
+<!-- Control Sidebar Toggle Button -->
+<li>
+<a class="dropdown-item" href="https://www.daanpitara.org/logout" onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
+                    Logout
+                </a>
+<form action="https://www.daanpitara.org/logout" autocomplete="off" id="logout-form" method="POST">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/> </form>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+<!-- sidebar: style can be found in sidebar.less -->
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 668.438px;"><section class="sidebar" style="overflow: hidden; width: auto; height: 668.438px;">
+<!-- Sidebar user panel -->
+<div class="user-panel">
+<div class="pull-left image">
+<img alt="User Image" class="img-circle" src="../../../_assets/images/user_img/1753469114Snapchat-871174712.jpg"/>
+</div>
+<div class="pull-left info">
+<p>Asheesh Bhalla</p>
+<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+</div>
+</div>
+<!-----Management Routing Start---------------------->
+<ul class="sidebar-menu tree" data-widget="tree">
+<li class="header">MAIN NAVIGATION</li>
+<li class=""><a href="https://www.daanpitara.org/admins"><i aria-hidden="true" class="fa fa-address-card-o"></i><span>Dashboard</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/user"><i class="fa fa-file-text-o"></i>All Users</a></li>
+<li><a href="https://www.daanpitara.org/admin/ngo-onboarding-list"><i class="fa fa-list"></i><span>All NGO</span></a></li>
+<li><a href="https://www.daanpitara.org/admin/ngo-cre-verified-list"><i class="fa fa-check"></i><span>Verified NGO</span></a></li>
+<li><a href="https://www.daanpitara.org/admin/ngo-mgr-approved-list"><i class="fa fa-thumbs-up"></i><span>Approved NGO</span></a></li>
+<li><a href="https://www.daanpitara.org/admin/ngo-onboarding-list-verified"><i class="fa fa-rocket"></i><span>Onboarded NGO</span></a></li>
+<li class="treeview">
+<a href="#">
+<i aria-hidden="true" class="fa fa-handshake-o"></i> <span>Categories</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li class=""><a href="https://www.daanpitara.org/category"><i class="fa fa-circle-o"></i>Categories</a></li>
+<li class=""><a href="https://www.daanpitara.org/subcategory"><i class="fa fa-circle-o"></i>Sub Categories</a></li>
+<li class=""><a href="https://www.daanpitara.org/childcategory"><i class="fa fa-circle-o"></i>ChildCategories</a></li>
+<li class=""><a href="https://www.daanpitara.org/subchildcategory"><i class="fa fa-circle-o"></i>SubChild Category</a></li>
+</ul>
+</li>
+<li class="active"><a href="https://www.daanpitara.org/blog"><i class="fa fa-file-text-o"></i>Blog</a></li>
+<li class=""><a href="https://www.daanpitara.org/admin/lang"><i aria-hidden="true" class="fa fa-language"></i><span>Language</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/usermessage"><i aria-hidden="true" class="fa fa-phone"></i><span>Contact Us</span></a></li>
+<li class="treeview">
+<a href="#">
+<i aria-hidden="true" class="fa fa-globe"></i> <span>Location</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li class=""><a href="https://www.daanpitara.org/admin/country"><i class="fa fa-crosshairs"></i>Country</a></li>
+<li class=""><a href="https://www.daanpitara.org/admin/state"><i class="fa fa-dot-circle-o"></i>State</a></li>
+<li class=""><a href="https://www.daanpitara.org/admin/city"><i class="fa fa-life-ring"></i>City</a></li>
+</ul>
+</li>
+<li class=""><a href="https://www.daanpitara.org/currency"> <i class="fa fa-money"></i><span>Currency</span></a></li>
+<li class="treeview">
+<a href="#">
+<i aria-hidden="true" class="fa fa-sliders"></i> <span>Front Settings</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li class=""><a href="https://www.daanpitara.org/slider"><i class="fa fa-barcode"></i><span>Sliders</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/facts"><i class="fa fa-align-right"></i><span>Facts Sliders</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/frontslider"><i class="fa fa-fort-awesome"></i><span>Category Sliders</span></a></li>
+</ul>
+</li>
+<li class="active treeview menu-open">
+<a href="#">
+<i aria-hidden="true" class="fa fa-cog"></i> <span>Site Settings</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li class=""><a href="https://www.daanpitara.org/settings"><i class="fa fa-wrench"></i><span>Settings</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/aboutpage"><i class="fa fa-address-book-o"></i>About</a></li>
+<li class=""><a href="https://www.daanpitara.org/terms"><i class="fa fa-file-text-o"></i>Terms &amp; Condition  </a></li>
+<li class=""><a href="https://www.daanpitara.org/policy"><i class="fa fa-lock"></i> Privacy Policy</a></li>
+</ul>
+</li>
+<li><a href="https://www.daanpitara.org/admin/my-ngo-remark"><i class="fa fa-comment text-primary"></i> <span>My Remarks</span></a></li>
+</ul>
+<!-----------------------------------------Now Counsellor Routing Start-------------->'
+      
+     
+
+
+    </section><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 495.354px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+<!-- /.sidebar -->
+</aside>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="min-height: 669px;">
+<!-- Main content -->
+<section class="content">
+<div class="row">
+<div class="col-md-12">
+<div class="box box-primary">
+<div class="box-header with-border">
+<h3 class="box-title">Update Blog</h3>
+</div>
+<div class="panel-body">
+<form action="https://www.daanpitara.org/blog/5" autocomplete="off" enctype="multipart/form-data" method="POST">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/>
+<input name="_method" type="hidden" value="PUT"/>
+<div class="row">
+<div class="col-md-6">
+<label for="image">Date<sup class="redstar">*</sup></label>
+<div class="input-group date">
+<div class="input-group-addon">
+<i class="fa fa-calendar"></i>
+</div>
+<input autofocus="" class="form-control hasDatepicker" id="datepicker" name="heading" placeholder="select date" required="" type="text" value="0000-00-00"/>
+</div>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="col-md-6">
+<label for="heading">Heading<sup class="redstar">*</sup></label>
+<input autofocus="" class="form-control" name="heading" placeholder="Enter Heading" required="" type="text" value="A Day in the Life of an NGO Volunteer: Making a Difference with DaanPitara"/>
+</div>
+<div class="col-md-6">
+<label for="text">Button Text</label>
+<input autofocus="" class="form-control" name="text" placeholder="Enter Text" type="text" value="NGO Volunteer"/>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="col-md-9">
+<label for="detail">Detail<sup class="redstar">*</sup></label>
+<textarea aria-hidden="true" class="form-control" id="detail" name="detail" placeholder="Enter Your Details" rows="5" style="display: none;">&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Have you ever wondered what it&amp;rsquo;s like to spend a day making a real difference in someone&amp;rsquo;s life? Volunteering with an NGO is not just about helping others; it is about personal growth, learning, and contributing to a larger cause. Through platforms like DaanPitara, countless individuals in India are finding meaningful opportunities to create a positive social impact while experiencing the joys and challenges of community service.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 dir="ltr" style="line-height: 1.38; margin-top: 18pt; margin-bottom: 4pt;"&gt;&lt;span style="font-size: 17pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Morning: Preparing for a Day of Service&lt;/span&gt;&lt;/h2&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;The day of an &lt;/span&gt;&lt;a style="text-decoration: none;" href="../"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #1155cc; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;"&gt;NGO volunteer&lt;/span&gt;&lt;/a&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt; usually begins early. There is a unique sense of excitement in waking up knowing that your time will be dedicated to something bigger than yourself. For many volunteers, mornings start with planning the day&amp;rsquo;s activities, organizing materials, coordinating with other volunteers, and reviewing the tasks for the day.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Thanks to DaanPitara, volunteers can choose from a variety of volunteering opportunities across India. Whether it&amp;rsquo;s working in education, health, or environmental projects, the platform makes it easy for volunteers to find NGOs that match their interests and skills. This preparation isn&amp;rsquo;t just logistical; it is a mental and emotional warm-up, readying volunteers for the rewarding experiences that lie ahead.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Traveling to the NGO site is another moment of reflection. Seeing the bustling streets, interacting with fellow volunteers on the way, or even noticing the communities you&amp;rsquo;ll be serving can be inspiring. It is a reminder that each small step contributes to a larger social cause.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 dir="ltr" style="line-height: 1.38; margin-top: 18pt; margin-bottom: 4pt;"&gt;&lt;span style="font-size: 17pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Midday: Engaging in Volunteer Activities&lt;/span&gt;&lt;/h2&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;By mid-morning, the real action begins. NGO volunteer activities vary depending on the organization and project. Some volunteers may teach underprivileged children, while others help organize awareness campaigns, conduct workshops, or assist in health check-ups. &lt;/span&gt;&lt;a style="text-decoration: none;" href="../"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #1155cc; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Volunteering in India&lt;/span&gt;&lt;/a&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt; offers a rich tapestry of experiences, and every task, no matter how small, has a meaningful impact.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Interaction with beneficiaries is one of the most fulfilling aspects of volunteering. Imagine teaching a child to read for the first time or helping a community plant trees for a greener future. These moments of connection not only benefit the community but also leave lasting impressions on volunteers.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Of course, volunteering isn&amp;rsquo;t without challenges. Managing limited resources, dealing with unforeseen circumstances, or finding innovative ways to address community needs requires patience and adaptability. These experiences build resilience, empathy, and problem-solving skills, enriching the volunteer&amp;rsquo;s personal and professional life.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;DaanPitara emphasizes the importance of impact-driven volunteering. By connecting volunteers with NGOs working on critical social issues, the platform ensures that every effort counts. Whether it is helping women gain vocational skills, supporting children&amp;rsquo;s education, or participating in environmental projects, each activity contributes to meaningful social impact.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 dir="ltr" style="line-height: 1.38; margin-top: 18pt; margin-bottom: 4pt;"&gt;&lt;span style="font-size: 17pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Afternoon: Reflection and Team Collaboration&lt;/span&gt;&lt;/h2&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;After engaging in hands-on activities, afternoons often provide an opportunity for reflection. Volunteers gather to discuss their experiences, share learnings, and support each other in overcoming challenges. Team collaboration is a cornerstone of volunteering; working alongside passionate individuals fosters a sense of community and shared purpose.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Personal growth is another highlight of a volunteer&amp;rsquo;s journey. By stepping out of their comfort zone, volunteers learn to communicate effectively, adapt to diverse situations, and develop empathy for people from different walks of life. These skills are invaluable, both in personal and professional contexts.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Feedback and gratitude from the community make the day even more rewarding. A simple &amp;ldquo;thank you&amp;rdquo; from a beneficiary or seeing the visible improvement in someone&amp;rsquo;s life reinforces why volunteering matters. Platforms like &lt;/span&gt;&lt;a style="text-decoration: none;" href="../"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #1155cc; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;"&gt;DaanPitara&lt;/span&gt;&lt;/a&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt; showcase these success stories, inspiring more people to join the cause and experience the transformative power of community service.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 dir="ltr" style="line-height: 1.38; margin-top: 18pt; margin-bottom: 4pt;"&gt;&lt;span style="font-size: 17pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Evening: Wrapping Up and Looking Ahead&lt;/span&gt;&lt;/h2&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;As the day winds down, volunteers consolidate their learnings and plan for future activities. This could involve updating reports, sharing experiences on social media, or brainstorming new ideas for upcoming projects. It&amp;rsquo;s also a time to celebrate small victories, whether it&amp;rsquo;s completing a challenging task or witnessing tangible change in the community.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Volunteering is not just a one-day affair. It&amp;rsquo;s an ongoing commitment, and the experiences gained during each day fuel long-term dedication. Platforms like DaanPitara encourage volunteers to maintain this momentum by offering continuous opportunities to contribute, learn, and grow.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 dir="ltr" style="line-height: 1.38; margin-top: 18pt; margin-bottom: 4pt;"&gt;&lt;span style="font-size: 17pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;The Transformative Power of Volunteering&lt;/span&gt;&lt;/h2&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Volunteering with an NGO through DaanPitara is more than just giving time; it is about creating real impact. Volunteer stories reveal that the experience is mutually beneficial: while communities gain much-needed support, volunteers acquire new skills, broaden their perspectives, and build lasting relationships.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;From teaching and mentoring to organizing drives and environmental campaigns, every act of service matters. The benefits of volunteering go beyond the immediate tasks; they include enhanced personal satisfaction, a deeper understanding of societal issues, and a lifelong commitment to social impact.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;For those wondering whether they can make a difference, the answer is a resounding yes. NGO volunteer experiences are accessible to everyone, regardless of age, background, or location. With platforms like DaanPitara, it&amp;rsquo;s easier than ever to find a project that aligns with your passions and skills, ensuring your efforts are both meaningful and impactful.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 dir="ltr" style="line-height: 1.38; margin-top: 18pt; margin-bottom: 4pt;"&gt;&lt;span style="font-size: 17pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;How to Get Started with DaanPitara&lt;/span&gt;&lt;/h2&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Getting involved is simple. By visiting&lt;/span&gt;&lt;a style="text-decoration: none;" href="../?utm_source=chatgpt.com"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt; &lt;/span&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #1155cc; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;"&gt;DaanPitara.org&lt;/span&gt;&lt;/a&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;, you can browse a wide range of volunteering opportunities and connect with NGOs that need your help. Whether you&amp;rsquo;re interested in education, health, environmental conservation, or community development, there&amp;rsquo;s a role for everyone.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Start small if you need to, maybe a weekend activity or a short-term project, and gradually build your commitment. Every hour counts, and each contribution brings about positive change. By joining the DaanPitara community, you become part of a growing movement of passionate individuals committed to making India a better place for all.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 dir="ltr" style="line-height: 1.38; margin-top: 18pt; margin-bottom: 4pt;"&gt;&lt;strong&gt;&lt;span style="font-size: 17pt; font-family: Arial, sans-serif; color: #000000; background-color: transparent; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Conclusion&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;A day in the life of an NGO volunteer is filled with learning, growth, and meaningful connections. From morning preparations to afternoon reflections, each moment offers a chance to make a difference. With platforms like DaanPitara, finding the right volunteering opportunity is easier than ever, enabling volunteers to maximize their impact while enjoying the journey.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span id="docs-internal-guid-edcbc748-7fff-aec6-72e5-967558bceca9"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;If you&amp;rsquo;ve ever wanted to experience the joy of giving back, there&amp;rsquo;s no better time than now. Join the DaanPitara network, immerse yourself in &lt;/span&gt;&lt;a style="text-decoration: none;" href="../"&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #1155cc; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;"&gt;community service&lt;/span&gt;&lt;/a&gt;&lt;span style="font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;, and discover the profound satisfaction of being an agent of positive change. Your contribution, big or small, can transform lives, including your own.&lt;/span&gt;&lt;/p&gt;</textarea><div class="tox tox-tinymce" role="application" style="visibility: hidden; height: 200px;"><div class="tox-editor-container"><div class="tox-editor-header" data-alloy-vertical-dir="toptobottom"><div class="tox-menubar" data-alloy-tabstop="true" role="menubar"><button aria-expanded="false" aria-haspopup="true" class="tox-mbtn tox-mbtn--select" data-alloy-tabstop="true" role="menuitem" style="user-select: none;" tabindex="-1" type="button" unselectable="on"><span class="tox-mbtn__select-label">File</span><div class="tox-mbtn__select-chevron"><svg height="10" width="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-expanded="false" aria-haspopup="true" class="tox-mbtn tox-mbtn--select" data-alloy-tabstop="true" role="menuitem" style="user-select: none;" tabindex="-1" type="button" unselectable="on"><span class="tox-mbtn__select-label">Edit</span><div class="tox-mbtn__select-chevron"><svg height="10" width="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-expanded="false" aria-haspopup="true" class="tox-mbtn tox-mbtn--select" data-alloy-tabstop="true" role="menuitem" style="user-select: none;" tabindex="-1" type="button" unselectable="on"><span class="tox-mbtn__select-label">View</span><div class="tox-mbtn__select-chevron"><svg height="10" width="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-expanded="false" aria-haspopup="true" class="tox-mbtn tox-mbtn--select" data-alloy-tabstop="true" role="menuitem" style="user-select: none;" tabindex="-1" type="button" unselectable="on"><span class="tox-mbtn__select-label">Insert</span><div class="tox-mbtn__select-chevron"><svg height="10" width="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-expanded="false" aria-haspopup="true" class="tox-mbtn tox-mbtn--select" data-alloy-tabstop="true" role="menuitem" style="user-select: none;" tabindex="-1" type="button" unselectable="on"><span class="tox-mbtn__select-label">Format</span><div class="tox-mbtn__select-chevron"><svg height="10" width="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-expanded="false" aria-haspopup="true" class="tox-mbtn tox-mbtn--select" data-alloy-tabstop="true" role="menuitem" style="user-select: none;" tabindex="-1" type="button" unselectable="on"><span class="tox-mbtn__select-label">Table</span><div class="tox-mbtn__select-chevron"><svg height="10" width="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div aria-disabled="false" class="tox-toolbar-overlord" role="group"><div class="tox-toolbar__primary" role="group"><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-disabled="true" aria-label="Undo" class="tox-tbtn tox-tbtn--disabled" tabindex="-1" title="Undo" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M6.4 8H12c3.7 0 6.2 2 6.8 5.1.6 2.7-.4 5.6-2.3 6.8a1 1 0 01-1-1.8c1.1-.6 1.8-2.7 1.4-4.6-.5-2.1-2.1-3.5-4.9-3.5H6.4l3.3 3.3a1 1 0 11-1.4 1.4l-5-5a1 1 0 010-1.4l5-5a1 1 0 011.4 1.4L6.4 8z" fill-rule="nonzero"></path></svg></span></button><button aria-disabled="true" aria-label="Redo" class="tox-tbtn tox-tbtn--disabled" tabindex="-1" title="Redo" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M17.6 10H12c-2.8 0-4.4 1.4-4.9 3.5-.4 2 .3 4 1.4 4.6a1 1 0 11-1 1.8c-2-1.2-2.9-4.1-2.3-6.8.6-3 3-5.1 6.8-5.1h5.6l-3.3-3.3a1 1 0 111.4-1.4l5 5a1 1 0 010 1.4l-5 5a1 1 0 01-1.4-1.4l3.3-3.3z" fill-rule="nonzero"></path></svg></span></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-disabled="false" aria-label="Bold" aria-pressed="false" class="tox-tbtn" tabindex="-1" title="Bold" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M7.8 19c-.3 0-.5 0-.6-.2l-.2-.5V5.7c0-.2 0-.4.2-.5l.6-.2h5c1.5 0 2.7.3 3.5 1 .7.6 1.1 1.4 1.1 2.5a3 3 0 01-.6 1.9c-.4.6-1 1-1.6 1.2.4.1.9.3 1.3.6s.8.7 1 1.2c.4.4.5 1 .5 1.6 0 1.3-.4 2.3-1.3 3-.8.7-2.1 1-3.8 1H7.8zm5-8.3c.6 0 1.2-.1 1.6-.5.4-.3.6-.7.6-1.3 0-1.1-.8-1.7-2.3-1.7H9.3v3.5h3.4zm.5 6c.7 0 1.3-.1 1.7-.4.4-.4.6-.9.6-1.5s-.2-1-.7-1.4c-.4-.3-1-.4-2-.4H9.4v3.8h4z" fill-rule="evenodd"></path></svg></span></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-disabled="false" aria-label="Italic" aria-pressed="false" class="tox-tbtn" tabindex="-1" title="Italic" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M16.7 4.7l-.1.9h-.3c-.6 0-1 0-1.4.3-.3.3-.4.6-.5 1.1l-2.1 9.8v.6c0 .5.4.8 1.4.8h.2l-.2.8H8l.2-.8h.2c1.1 0 1.8-.5 2-1.5l2-9.8.1-.5c0-.6-.4-.8-1.4-.8h-.3l.2-.9h5.8z" fill-rule="evenodd"></path></svg></span></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-disabled="false" aria-label="Underline" aria-pressed="false" class="tox-tbtn" tabindex="-1" title="Underline" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M16 5c.6 0 1 .4 1 1v5.5a4 4 0 01-.4 1.8l-1 1.4a5.3 5.3 0 01-5.5 1 5 5 0 01-1.6-1c-.5-.4-.8-.9-1.1-1.4a4 4 0 01-.4-1.8V6c0-.6.4-1 1-1s1 .4 1 1v5.5c0 .3 0 .6.2 1l.6.7a3.3 3.3 0 002.2.8 3.4 3.4 0 002.2-.8c.3-.2.4-.5.6-.8l.2-.9V6c0-.6.4-1 1-1zM8 17h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-disabled="false" aria-label="Strikethrough" aria-pressed="false" class="tox-tbtn" tabindex="-1" title="Strikethrough" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><g fill-rule="evenodd"><path d="M15.6 8.5c-.5-.7-1-1.1-1.3-1.3-.6-.4-1.3-.6-2-.6-2.7 0-2.8 1.7-2.8 2.1 0 1.6 1.8 2 3.2 2.3 4.4.9 4.6 2.8 4.6 3.9 0 1.4-.7 4.1-5 4.1A6.2 6.2 0 017 16.4l1.5-1.1c.4.6 1.6 2 3.7 2 1.6 0 2.5-.4 3-1.2.4-.8.3-2-.8-2.6-.7-.4-1.6-.7-2.9-1-1-.2-3.9-.8-3.9-3.6C7.6 6 10.3 5 12.4 5c2.9 0 4.2 1.6 4.7 2.4l-1.5 1.1z"></path><path d="M5 11h14a1 1 0 010 2H5a1 1 0 010-2z" fill-rule="nonzero"></path></g></svg></span></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-disabled="false" aria-label="Superscript" aria-pressed="false" class="tox-tbtn" tabindex="-1" title="Superscript" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M15 9.4L10.4 14l4.6 4.6-1.4 1.4L9 15.4 4.4 20 3 18.6 7.6 14 3 9.4 4.4 8 9 12.6 13.6 8 15 9.4zm5.9 1.6h-5v-1l1-.8 1.7-1.6c.3-.5.5-.9.5-1.3 0-.3 0-.5-.2-.7-.2-.2-.5-.3-.9-.3l-.8.2-.7.4-.4-1.2c.2-.2.5-.4 1-.5.3-.2.8-.2 1.2-.2.8 0 1.4.2 1.8.6.4.4.6 1 .6 1.6 0 .5-.2 1-.5 1.5l-1.3 1.4-.6.5h2.6V11z" fill-rule="nonzero"></path></svg></span></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-disabled="false" aria-label="Subscript" aria-pressed="false" class="tox-tbtn" tabindex="-1" title="Subscript" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M10.4 10l4.6 4.6-1.4 1.4L9 11.4 4.4 16 3 14.6 7.6 10 3 5.4 4.4 4 9 8.6 13.6 4 15 5.4 10.4 10zM21 19h-5v-1l1-.8 1.7-1.6c.3-.4.5-.8.5-1.2 0-.3 0-.6-.2-.7-.2-.2-.5-.3-.9-.3a2 2 0 00-.8.2l-.7.3-.4-1.1 1-.6 1.2-.2c.8 0 1.4.3 1.8.7.4.4.6.9.6 1.5s-.2 1.1-.5 1.6a8 8 0 01-1.3 1.3l-.6.6h2.6V19z" fill-rule="nonzero"></path></svg></span></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-expanded="false" aria-haspopup="true" aria-label="Table" class="tox-tbtn tox-tbtn--select" data-alloy-tabstop="true" style="user-select: none;" tabindex="-1" title="Table" type="button" unselectable="on"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M19 4a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6c0-1.1.9-2 2-2h14zM5 14v4h6v-4H5zm14 0h-6v4h6v-4zm0-6h-6v4h6V8zM5 12h6V8H5v4z" fill-rule="nonzero"></path></svg></span><div class="tox-tbtn__select-chevron"><svg height="10" width="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1" title=""><button aria-disabled="false" aria-label="Insert/edit image" aria-pressed="false" class="tox-tbtn" tabindex="-1" title="Insert/edit image" type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M5 15.7l3.3-3.2c.3-.3.7-.3 1 0L12 15l4.1-4c.3-.4.8-.4 1 0l2 1.9V5H5v10.7zM5 18V19h3l2.8-2.9-2-2L5 17.9zm14-3l-2.5-2.4-6.4 6.5H19v-4zM4 3h16c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H4a1 1 0 01-1-1V4c0-.6.4-1 1-1zm6 8a2 2 0 100-4 2 2 0 000 4z" fill-rule="nonzero"></path></svg></span></button></div><div class="tox-toolbar__group" data-alloy-tabstop="true" role="toolbar" tabindex="-1"><button aria-expanded="false" aria-haspopup="true" aria-label="More..." class="tox-tbtn" data-alloy-tabstop="true" tabindex="-1" title="More..." type="button"><span class="tox-icon tox-tbtn__icon-wrap"><svg height="24" width="24"><path d="M6 10a2 2 0 00-2 2c0 1.1.9 2 2 2a2 2 0 002-2 2 2 0 00-2-2zm12 0a2 2 0 00-2 2c0 1.1.9 2 2 2a2 2 0 002-2 2 2 0 00-2-2zm-6 0a2 2 0 00-2 2c0 1.1.9 2 2 2a2 2 0 002-2 2 2 0 00-2-2z" fill-rule="nonzero"></path></svg></span></button></div></div></div><div class="tox-anchorbar"></div></div><div class="tox-sidebar-wrap"><div class="tox-edit-area"><iframe allowtransparency="true" class="tox-edit-area__iframe" frameborder="0" id="detail_ifr" title="Rich Text Area. Press ALT-0 for help."></iframe></div><div class="tox-sidebar" role="complementary"><div class="tox-sidebar__slider tox-sidebar--sliding-closed" data-alloy-tabstop="true" style="width: 0px;" tabindex="-1"><div class="tox-sidebar__pane-container"></div></div></div></div></div><div class="tox-statusbar"><div class="tox-statusbar__text-container"><div aria-disabled="false" class="tox-statusbar__path" data-alloy-tabstop="true" role="navigation"><div aria-disabled="false" aria-level="1" class="tox-statusbar__path-item" data-index="0" role="button" tab-index="-1" tabindex="-1">p</div><div aria-hidden="true" class="tox-statusbar__path-divider"> » </div><div aria-disabled="false" aria-level="2" class="tox-statusbar__path-item" data-index="1" role="button" tab-index="-1" tabindex="-1">span</div></div><span class="tox-statusbar__branding"><a aria-label="Powered by Tiny" href="https://www.tiny.cloud/?utm_campaign=editor_referral&amp;utm_medium=poweredby&amp;utm_source=tinymce&amp;utm_content=v5" rel="noopener" tabindex="-1" target="_blank">Powered by Tiny</a></span></div><div aria-hidden="true" class="tox-statusbar__resize-handle" title="Resize"><svg height="10" width="10"><g fill-rule="nonzero"><path d="M8.1 1.1A.5.5 0 119 2l-7 7A.5.5 0 111 8l7-7zM8.1 5.1A.5.5 0 119 6l-3 3A.5.5 0 115 8l3-3z"></path></g></svg></div></div><div aria-hidden="true" class="tox-throbber" style="display: none;"></div></div>
+</div>
+<div class="col-md-3">
+<label for="image">Image<sup class="redstar">*</sup></label>
+<input id="image" name="image" type="file"/><br/><img class="img-responsive" src="../../../_assets/images/blog/1760190300Daan pitara linkdin post _20251010_131418_0000.png"/>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="col-md-6">
+<label for="exampleInputTit1e">Approved:</label>
+<li class="tg-list-item">
+<input checked="" class="tgl tgl-skewed" id="approved" name="approved" type="checkbox"/>
+<label class="tgl-btn" data-tg-off="Disable" data-tg-on="Enable" for="approved"></label>
+</li>
+<input for="approved" id="approved" name="free" type="hidden" value="0"/>
+</div>
+<div class="col-md-6">
+<label for="exampleInput">Status:</label>
+<li class="tg-list-item">
+<input checked="" class="tgl tgl-skewed" id="status" name="status" type="checkbox"/>
+<label class="tgl-btn" data-tg-off="Disable" data-tg-on="Enable" for="status"></label>
+</li>
+<input for="status" id="status" name="free" type="hidden" value="0"/>
+</div>
+</div>
+<br/>
+<div class="box-footer">
+<button class="btn btn-lg col-md-3 btn-primary" type="submit" value="">Save</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main content end-->
+</div>
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+<div class="pull-right hidden-xs">
+        DAANPITARA (Version 2.0)
+      </div>
+     Developed by ZHEAL MEDIA MATTERS 
+    </footer>
+<!-- /.control-sidebar -->
+<div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+<!-- jQuery 3 -->
+<script src="../../../_assets/admin/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../../_assets/admin/js/select2.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../../_assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> <!-- DataTables -->
+<script src="../../../_assets/admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../../_assets/admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script> <!-- SlimScroll -->
+<script src="../../../_assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script> <!-- FastClick -->
+<script src="../../../_assets/admin/bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../../_assets/admin/dist/js/adminlte.min.js"></script> <!-- AdminLTE for demo purposes -->
+<script src="../../../_assets/admin/dist/js/demo.js"></script>
+<script src="../../../_assets/admin/bower_components/PACE/pace.min.js"></script>
+<!-- PACE -->
+<script src="../../../_assets/admin/bower_components/ckeditor/ckeditor.js"></script>
+<!-- CK Editor -->
+<script src="../../../_assets/admin/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script> <!-- bootstrap datepicker -->
+<script src="../../../_assets/admin/js/jquery-ui.js"></script>
+<script src="../../../_assets/js/custom-toggle.js"></script>
+<script src="../../../_assets/js/custom-file-input.js"></script>
+<script src="../../../_assets/js/fontawesome-iconpicker.js"></script>
+<script src="../../../_assets/admin/js/courseclass.js"></script>
+<script src="../../../_assets/admin/js/tinymce.min.js"></script>
+<script src="../../../_assets/admin/bower_components/moment/moment.js"></script>
+<script src="../../../_assets/js/datepicker.js"></script>
+<script src="../../../_assets/js/custom-js.js"></script>
+<script src="../../../_assets/admin/js/dataTables.buttons.min.js"></script>
+<script src="../../../_assets/admin/js/buttons.flash.min.js"></script>
+<script src="../../../_assets/admin/js/jszip.min.js"></script>
+<script src="../../../_assets/admin/js/pdfmake.min.js"></script>
+<script src="../../../_assets/admin/js/vfs_fonts.js"></script>
+<script src="../../../_assets/admin/js/buttons.html5.min.js"></script>
+<script src="../../../_assets/admin/js/buttons.print.min.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+      $('#example1').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        'paging'      : true,
+        'lengthChange': true,
+        'searching'   : true,
+        'ordering'    : true,
+        'info'        : true,
+        'autoWidth'   : true
+      })
+    }) 
+  </script>
+<script>
+    $(document).ready(function() {
+      $('#example2').DataTable( {
+          dom: 'Bfrtip',
+          buttons: [
+              'copy', 'csv', 'excel', 'pdf', 'print'
+          ],
+          'paging'      : true,
+          'lengthChange': true,
+          'searching'   : true,
+          'ordering'    : true,
+          'info'        : true,
+          'autoWidth'   : true
+      });
+    });
+  </script>
+<script>
+    tinymce.init({
+      selector: 'textarea#detail, #detail2, #detail3, #detail4',
+        images_upload_url: 'postAcceptor.php',
+      automatic_uploads: false,
+      plugins: ' bullist table lists media image fullscreen',
+   
+      toolbar: 'undo redo | bold | italic | underline | equation | strikethrough | superscript | subscript | table | image | fontselect fontsizeselect formatselect  | alignleft aligncenter alignjustify | numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak |  insertfile image media  template link anchor codesample |  pageembed fullscreen',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name'
+      
+     
+    });
+  </script>
+<!--  <script type="text/javascript">-->
+<!--tinyMCE.init({-->
+<!--    selector: 'textarea#detail',-->
+<!--plugins : 'equation',-->
+<!--mode : "textareas",-->
+<!--theme : "advanced",-->
+<!--theme_advanced_buttons1 : "equation,bold,italic,underline,separator,strikethrough,justifyleft",-->
+<!--theme_advanced_buttons2 : "",-->
+<!--theme_advanced_buttons3 : "",-->
+<!--theme_advanced_toolbar_location : "top",-->
+<!--theme_advanced_toolbar_align : "left",-->
+<!--theme_advanced_statusbar_location : "bottom"-->
+<!--});-->
+<!--</script>-->
+<script>
+    window.setTimeout(function(){
+      $(".alert").fadeTo(300,0).slideUp(500, function(){
+        $(this).remove();
+      });
+    },2000);
+  </script>
+<script>
+    $(function(){
+      $('.icp-auto').iconpicker();
+    });
+  </script>
+<script>
+ 
+    $(function () {
+      $('.action-destroy').on('click', function () {
+        $.iconpicker.batch('.icp.iconpicker-element', 'destroy');
+      });
+      $(document).on('click', '.action-placement', function (e) {
+        $('.action-placement').removeClass('active');
+        $(this).addClass('active');
+        $('.icp-opts').data('iconpicker').updatePlacement($(this).text());
+        e.preventDefault();
+        return false;
+      });
+      $('.action-create').on('click', function () {
+        $('.icp-auto').iconpicker();
+
+        $('.icp-dd').iconpicker({
+          
+        });
+        $('.icp-opts').iconpicker({
+          title: 'With custom options',
+          icons: [
+            {
+              title: "fab fa-github",
+              searchTerms: ['repository', 'code']
+            },
+            {
+              title: "fas fa-heart",
+              searchTerms: ['love']
+            },
+            {
+              title: "fab fa-html5",
+              searchTerms: ['web']
+            },
+            {
+              title: "fab fa-css3",
+              searchTerms: ['style']
+            }
+          ],
+          selectedCustomClass: 'label label-success',
+          mustAccept: true,
+          placement: 'bottomRight',
+          showFooter: true,
+          // note that this is ignored cause we have an accept button:
+          hideOnSelect: true,
+          // fontAwesome5: true,
+          templates: {
+            footer: '<div class="popover-footer">' +
+            '<div style="text-align:left; font-size:12px;">Placements: \n\
+            <a href="#" class=" action-placement">inline</a>\n\
+            <a href="#" class=" action-placement">topLeftCorner</a>\n\
+            <a href="#" class=" action-placement">topLeft</a>\n\
+            <a href="#" class=" action-placement">top</a>\n\
+            <a href="#" class=" action-placement">topRight</a>\n\
+            <a href="#" class=" action-placement">topRightCorner</a>\n\
+            <a href="#" class=" action-placement">rightTop</a>\n\
+            <a href="#" class=" action-placement">right</a>\n\
+            <a href="#" class=" action-placement">rightBottom</a>\n\
+            <a href="#" class=" action-placement">bottomRightCorner</a>\n\
+            <a href="#" class=" active action-placement">bottomRight</a>\n\
+            <a href="#" class=" action-placement">bottom</a>\n\
+            <a href="#" class=" action-placement">bottomLeft</a>\n\
+            <a href="#" class=" action-placement">bottomLeftCorner</a>\n\
+            <a href="#" class=" action-placement">leftBottom</a>\n\
+            <a href="#" class=" action-placement">left</a>\n\
+            <a href="#" class=" action-placement">leftTop</a>\n\
+            </div><hr></div>'
+          }
+        }).data('iconpicker').show();
+      }).trigger('click');
+
+      
+      $('.icp').on('iconpickerSelected', function (e) {
+        $('.lead .picker-target').get(0).className = 'picker-target fa-3x ' +
+          e.iconpickerInstance.options.iconBaseClass + ' ' +
+          e.iconpickerInstance.options.fullClassFormatter(e.iconpickerValue);
+      });
+    });
+
+  </script>
+<script>
+    $('#datepicker').datepicker({
+      autoclose: true,
+      changeYear: true,
+    })
+  </script><div class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" id="ui-datepicker-div"></div>
+<script>
+    $(function(){
+      $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+          localStorage.setItem('activeTab', $(e.target).attr('href'));
+      });
+      var activeTab = localStorage.getItem('activeTab');
+      if(activeTab){
+          $('#nav-tab a[href="' + activeTab + '"]').tab('show');
+      }
+    });
+  </script>
+<script>
+    $(function() {
+        $('form').attr('autocomplete','off');
+    });
+  </script>
+<script>
+    $(function() {
+      $('.js-example-basic-single').select2();
+    });
+  </script>
+<script>
+(function($) {
+  "use strict";
+    tinymce.init({selector:'textarea#detail'});
+})(jQuery);
+</script>
+<div class="tox tox-silver-sink tox-tinymce-aux" style="position: relative;"></div></body></html>

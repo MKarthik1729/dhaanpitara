@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html class="js" lang="en" style="height: auto; min-height: 100%;"><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Edit Language | DAANPITARA</title>
+<!-- Tell the browser to be 
+   to screen width -->
+<style>
+                div.dt-buttons
+                {
+                display: none!important;
+                }
+        </style>
+<meta content="DaanPitara" name="description"/>
+<meta content="DaanPitara" name="keywords"/>
+<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '');
+    </script>
+<!-- Facebook Pixel Code -->
+<script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '');
+      fbq('track', 'PageView');
+    </script>
+<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+<noscript>
+<img src="https://www.facebook.com/tr?id=&amp;ev=PageView&amp;noscript=1" style="display:none"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+<link href="../../../_assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> <!-- Bootstrap 3.3.7 -->
+<link href="../../../_assets/css/datepicker.css" rel="stylesheet"/>
+<link href="../../../_assets/images/favicon/favicon.png" rel="icon" type="image/icon"/> <!-- favicon-icon -->
+<link href="../../../_assets/admin/css/select2.min.css" rel="stylesheet"/> <!-- Font Awesome -->
+<link href="../../../_assets/admin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../../../_assets/css/fontawesome-iconpicker.min.css" rel="stylesheet"/>
+<link href="../../../_assets/admin/css/jquery-ui.css" rel="stylesheet"/>
+<!-- Ionicons -->
+<link href="../../../_assets/admin/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet"/>
+<!-- DataTables -->
+<link href="../../../_assets/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet"/> <!-- Theme style -->
+<link href="../../../_assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+<link href="../../../_assets/admin/dist/css/AdminLTE.min.css" rel="stylesheet"/>
+<link href="../../../_assets/css/toggle.css" rel="stylesheet"/>
+<link href="../../../_assets/css/component.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_assets/css/normalize.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_assets/admin/plugins/pace/pace.min.css" rel="stylesheet"/>
+<link href="../../../_assets/admin/dist/css/skins/_all-skins.min.css" rel="stylesheet"/>
+<link href="../../../_assets/admin/css/bootstrap-toggle.min.css"/>
+<link href="../../../_assets/css/animate.min.css" rel="stylesheet"/><!-- Custom Css -->
+<link href="../../../_assets/admin/css/admin.css" rel="stylesheet"/>
+<link href="../../../_assets/css/custom-style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" rel="stylesheet"/>
+<link href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css" rel="stylesheet"/>
+<style>.cke{visibility:hidden;}</style></head>
+<body class="skin-blue sidebar-mini fixed pace-running sidebar-mini-expand-feature" style="height: auto; min-height: 100%;"><div class="pace pace-active"><div class="pace-progress" data-progress="77" data-progress-text="77%" style="transform: translate3d(77.2895%, 0px, 0px);">
+<div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div class="wrapper" style="height: auto; min-height: 100%;">
+<header class="main-header">
+<!-- Logo -->
+<a class="logo" href="https://www.daanpitara.org">
+<!-- mini logo for sidebar mini 50x50 pixels -->
+<span class="logo-mini">
+<img alt="" src="../../../_assets/images/favicon/favicon.png" title="DAANPITARA" width="20px"/>
+</span>
+<!-- logo for regular state and mobile devices -->
+<span class="logo-lg"> <img alt="" src="../../../_assets/images/logo/logo_1752269544daanpitaralogo.png" title="DAANPITARA" width="100px"/></span>
+</a>
+<!-- Header Navbar: style can be found in header.less -->
+<nav class="navbar navbar-static-top">
+<!-- Sidebar toggle button-->
+<a class="sidebar-toggle" data-toggle="push-menu" href="#" role="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<div class="navbar-custom-menu">
+<ul class="nav navbar-nav">
+<!-- Messages: style can be found in dropdown.less-->
+<li class="dropdown admin-nav language">
+<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-globe"></i> en</button>
+<ul class="dropdown-menu animated flipInX">
+<li><a href="https://www.daanpitara.org/language-switch/en">English (en) </a></li>
+</ul>
+</li>
+<!-- User Account: style can be found in dropdown.less -->
+<li><a class="visit site" href="https://www.daanpitara.org" target="_blank">Visit Site</a></li>
+<li class="dropdown user user-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+<img alt="" class="user-image" src="../../../_assets/images/user_img/1753469114Snapchat-871174712.jpg"/>
+<span class="hidden-xs">Hi ! Asheesh</span>
+</a>
+<ul class="dropdown-menu">
+<!-- User image -->
+<li class="user-header">
+<img alt="User Image" class="img-circle" src="../../../_assets/images/user_img/1753469114Snapchat-871174712.jpg"/>
+<br/>
+<p>
+                   Asheesh
+                    <small>Member Since: 16th July 2025</small>
+</p>
+</li>
+<li class="user-footer">
+<div class="pull-left">
+<a class="btn btn-default btn-flat" href="https://www.daanpitara.org/user/edit/7">Profile</a>
+</div>
+<div class="pull-right">
+<a class="btn btn-default btn-flat" href="https://www.daanpitara.org/logout" onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
+                    Logout
+                    </a>
+<form action="https://www.daanpitara.org/logout" autocomplete="off" id="logout-form" method="POST">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/> </form>
+</div>
+</li>
+</ul>
+</li>
+<!-- Control Sidebar Toggle Button -->
+<li>
+<a class="dropdown-item" href="https://www.daanpitara.org/logout" onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
+                    Logout
+                </a>
+<form action="https://www.daanpitara.org/logout" autocomplete="off" id="logout-form" method="POST">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/> </form>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+<!-- sidebar: style can be found in sidebar.less -->
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 668.438px;"><section class="sidebar" style="overflow: hidden; width: auto; height: 668.438px;">
+<!-- Sidebar user panel -->
+<div class="user-panel">
+<div class="pull-left image">
+<img alt="User Image" class="img-circle" src="../../../_assets/images/user_img/1753469114Snapchat-871174712.jpg"/>
+</div>
+<div class="pull-left info">
+<p>Asheesh Bhalla</p>
+<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+</div>
+</div>
+<!-----Management Routing Start---------------------->
+<ul class="sidebar-menu tree" data-widget="tree">
+<li class="header">MAIN NAVIGATION</li>
+<li class=""><a href="https://www.daanpitara.org/admins"><i aria-hidden="true" class="fa fa-address-card-o"></i><span>Dashboard</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/user"><i class="fa fa-file-text-o"></i>All Users</a></li>
+<li><a href="https://www.daanpitara.org/admin/ngo-onboarding-list"><i class="fa fa-list"></i><span>All NGO</span></a></li>
+<li><a href="https://www.daanpitara.org/admin/ngo-cre-verified-list"><i class="fa fa-check"></i><span>Verified NGO</span></a></li>
+<li><a href="https://www.daanpitara.org/admin/ngo-mgr-approved-list"><i class="fa fa-thumbs-up"></i><span>Approved NGO</span></a></li>
+<li><a href="https://www.daanpitara.org/admin/ngo-onboarding-list-verified"><i class="fa fa-rocket"></i><span>Onboarded NGO</span></a></li>
+<li class="treeview">
+<a href="#">
+<i aria-hidden="true" class="fa fa-handshake-o"></i> <span>Categories</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li class=""><a href="https://www.daanpitara.org/category"><i class="fa fa-circle-o"></i>Categories</a></li>
+<li class=""><a href="https://www.daanpitara.org/subcategory"><i class="fa fa-circle-o"></i>Sub Categories</a></li>
+<li class=""><a href="https://www.daanpitara.org/childcategory"><i class="fa fa-circle-o"></i>ChildCategories</a></li>
+<li class=""><a href="https://www.daanpitara.org/subchildcategory"><i class="fa fa-circle-o"></i>SubChild Category</a></li>
+</ul>
+</li>
+<li class=""><a href="https://www.daanpitara.org/blog"><i class="fa fa-file-text-o"></i>Blog</a></li>
+<li class=""><a href="https://www.daanpitara.org/admin/lang"><i aria-hidden="true" class="fa fa-language"></i><span>Language</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/usermessage"><i aria-hidden="true" class="fa fa-phone"></i><span>Contact Us</span></a></li>
+<li class="treeview">
+<a href="#">
+<i aria-hidden="true" class="fa fa-globe"></i> <span>Location</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li class=""><a href="https://www.daanpitara.org/admin/country"><i class="fa fa-crosshairs"></i>Country</a></li>
+<li class=""><a href="https://www.daanpitara.org/admin/state"><i class="fa fa-dot-circle-o"></i>State</a></li>
+<li class=""><a href="https://www.daanpitara.org/admin/city"><i class="fa fa-life-ring"></i>City</a></li>
+</ul>
+</li>
+<li class=""><a href="https://www.daanpitara.org/currency"> <i class="fa fa-money"></i><span>Currency</span></a></li>
+<li class="treeview">
+<a href="#">
+<i aria-hidden="true" class="fa fa-sliders"></i> <span>Front Settings</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li class=""><a href="https://www.daanpitara.org/slider"><i class="fa fa-barcode"></i><span>Sliders</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/facts"><i class="fa fa-align-right"></i><span>Facts Sliders</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/frontslider"><i class="fa fa-fort-awesome"></i><span>Category Sliders</span></a></li>
+</ul>
+</li>
+<li class="treeview">
+<a href="#">
+<i aria-hidden="true" class="fa fa-cog"></i> <span>Site Settings</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li class=""><a href="https://www.daanpitara.org/settings"><i class="fa fa-wrench"></i><span>Settings</span></a></li>
+<li class=""><a href="https://www.daanpitara.org/aboutpage"><i class="fa fa-address-book-o"></i>About</a></li>
+<li class=""><a href="https://www.daanpitara.org/terms"><i class="fa fa-file-text-o"></i>Terms &amp; Condition  </a></li>
+<li class=""><a href="https://www.daanpitara.org/policy"><i class="fa fa-lock"></i> Privacy Policy</a></li>
+</ul>
+</li>
+<li><a href="https://www.daanpitara.org/admin/my-ngo-remark"><i class="fa fa-comment text-primary"></i> <span>My Remarks</span></a></li>
+</ul>
+<!-----------------------------------------Now Counsellor Routing Start-------------->'
+      
+     
+
+
+    </section><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 563.442px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+<!-- /.sidebar -->
+</aside>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="min-height: 669px;">
+<!-- Main content -->
+<section class="content">
+<div class="row">
+<div class="col-md-12">
+<div class="box box-primary">
+<div class="box-header with-border">
+<h3 class="box-title"> Edit Language</h3>
+</div>
+<div class="panel-body">
+<form action="https://www.daanpitara.org/languages/1" autocomplete="off" class="form-horizontal form-label-left" data-parsley-validate="" enctype="multipart/form-data" id="demo-form2" method="post">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/>
+<input name="_method" type="hidden" value="PUT"/>
+<div class="row">
+<div class="col-md-5">
+<label for="local">Local:<sup class="redstar">*</sup></label>
+<input class="form-control" name="local" placeholder="Please enter language local name" required="" type="text" value="en"/>
+</div>
+<div class="col-md-5">
+<label for="name">Name:<sup class="redstar">*</sup></label>
+<input class="form-control" id="sub_heading" name="name" placeholder="Please enter language name eg:English" required="" type="text" value="English"/>
+</div>
+<div class="col-md-2">
+<label for="">Set Default</label>
+<br/>
+<label class="switch">
+<input checked="" class="checkbox-switch" id="logo_chk" name="def" type="checkbox"/>
+<span class="slider round"></span>
+</label>
+</div>
+</div>
+<br/>
+<div class="box-footer">
+<button class="btn btn-md btn-primary" type="submit">Save</button>
+</div>
+</form>
+</div>
+<!-- /.panel body -->
+</div>
+<!-- /.box -->
+</div>
+<!--/.col (right) -->
+</div>
+<!-- /.row -->
+</section>
+<!-- Main content end-->
+</div>
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+<div class="pull-right hidden-xs">
+        DAANPITARA (Version 2.0)
+      </div>
+     Developed by ZHEAL MEDIA MATTERS 
+    </footer>
+<!-- /.control-sidebar -->
+<div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+<!-- jQuery 3 -->
+<script src="../../../_assets/admin/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../../_assets/admin/js/select2.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../../_assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> <!-- DataTables -->
+<script src="../../../_assets/admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../../_assets/admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script> <!-- SlimScroll -->
+<script src="../../../_assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script> <!-- FastClick -->
+<script src="../../../_assets/admin/bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../../_assets/admin/dist/js/adminlte.min.js"></script> <!-- AdminLTE for demo purposes -->
+<script src="../../../_assets/admin/dist/js/demo.js"></script>
+<script src="../../../_assets/admin/bower_components/PACE/pace.min.js"></script>
+<!-- PACE -->
+<script src="../../../_assets/admin/bower_components/ckeditor/ckeditor.js"></script>
+<!-- CK Editor -->
+<script src="../../../_assets/admin/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script> <!-- bootstrap datepicker -->
+<script src="../../../_assets/admin/js/jquery-ui.js"></script>
+<script src="../../../_assets/js/custom-toggle.js"></script>
+<script src="../../../_assets/js/custom-file-input.js"></script>
+<script src="../../../_assets/js/fontawesome-iconpicker.js"></script>
+<script src="../../../_assets/admin/js/courseclass.js"></script>
+<script src="../../../_assets/admin/js/tinymce.min.js"></script>
+<script src="../../../_assets/admin/bower_components/moment/moment.js"></script>
+<script src="../../../_assets/js/datepicker.js"></script>
+<script src="../../../_assets/js/custom-js.js"></script>
+<script src="../../../_assets/admin/js/dataTables.buttons.min.js"></script>
+<script src="../../../_assets/admin/js/buttons.flash.min.js"></script>
+<script src="../../../_assets/admin/js/jszip.min.js"></script>
+<script src="../../../_assets/admin/js/pdfmake.min.js"></script>
+<script src="../../../_assets/admin/js/vfs_fonts.js"></script>
+<script src="../../../_assets/admin/js/buttons.html5.min.js"></script>
+<script src="../../../_assets/admin/js/buttons.print.min.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+      $('#example1').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        'paging'      : true,
+        'lengthChange': true,
+        'searching'   : true,
+        'ordering'    : true,
+        'info'        : true,
+        'autoWidth'   : true
+      })
+    }) 
+  </script>
+<script>
+    $(document).ready(function() {
+      $('#example2').DataTable( {
+          dom: 'Bfrtip',
+          buttons: [
+              'copy', 'csv', 'excel', 'pdf', 'print'
+          ],
+          'paging'      : true,
+          'lengthChange': true,
+          'searching'   : true,
+          'ordering'    : true,
+          'info'        : true,
+          'autoWidth'   : true
+      });
+    });
+  </script>
+<script>
+    tinymce.init({
+      selector: 'textarea#detail, #detail2, #detail3, #detail4',
+        images_upload_url: 'postAcceptor.php',
+      automatic_uploads: false,
+      plugins: ' bullist table lists media image fullscreen',
+   
+      toolbar: 'undo redo | bold | italic | underline | equation | strikethrough | superscript | subscript | table | image | fontselect fontsizeselect formatselect  | alignleft aligncenter alignjustify | numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak |  insertfile image media  template link anchor codesample |  pageembed fullscreen',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name'
+      
+     
+    });
+  </script>
+<!--  <script type="text/javascript">-->
+<!--tinyMCE.init({-->
+<!--    selector: 'textarea#detail',-->
+<!--plugins : 'equation',-->
+<!--mode : "textareas",-->
+<!--theme : "advanced",-->
+<!--theme_advanced_buttons1 : "equation,bold,italic,underline,separator,strikethrough,justifyleft",-->
+<!--theme_advanced_buttons2 : "",-->
+<!--theme_advanced_buttons3 : "",-->
+<!--theme_advanced_toolbar_location : "top",-->
+<!--theme_advanced_toolbar_align : "left",-->
+<!--theme_advanced_statusbar_location : "bottom"-->
+<!--});-->
+<!--</script>-->
+<script>
+    window.setTimeout(function(){
+      $(".alert").fadeTo(300,0).slideUp(500, function(){
+        $(this).remove();
+      });
+    },2000);
+  </script>
+<script>
+    $(function(){
+      $('.icp-auto').iconpicker();
+    });
+  </script>
+<script>
+ 
+    $(function () {
+      $('.action-destroy').on('click', function () {
+        $.iconpicker.batch('.icp.iconpicker-element', 'destroy');
+      });
+      $(document).on('click', '.action-placement', function (e) {
+        $('.action-placement').removeClass('active');
+        $(this).addClass('active');
+        $('.icp-opts').data('iconpicker').updatePlacement($(this).text());
+        e.preventDefault();
+        return false;
+      });
+      $('.action-create').on('click', function () {
+        $('.icp-auto').iconpicker();
+
+        $('.icp-dd').iconpicker({
+          
+        });
+        $('.icp-opts').iconpicker({
+          title: 'With custom options',
+          icons: [
+            {
+              title: "fab fa-github",
+              searchTerms: ['repository', 'code']
+            },
+            {
+              title: "fas fa-heart",
+              searchTerms: ['love']
+            },
+            {
+              title: "fab fa-html5",
+              searchTerms: ['web']
+            },
+            {
+              title: "fab fa-css3",
+              searchTerms: ['style']
+            }
+          ],
+          selectedCustomClass: 'label label-success',
+          mustAccept: true,
+          placement: 'bottomRight',
+          showFooter: true,
+          // note that this is ignored cause we have an accept button:
+          hideOnSelect: true,
+          // fontAwesome5: true,
+          templates: {
+            footer: '<div class="popover-footer">' +
+            '<div style="text-align:left; font-size:12px;">Placements: \n\
+            <a href="#" class=" action-placement">inline</a>\n\
+            <a href="#" class=" action-placement">topLeftCorner</a>\n\
+            <a href="#" class=" action-placement">topLeft</a>\n\
+            <a href="#" class=" action-placement">top</a>\n\
+            <a href="#" class=" action-placement">topRight</a>\n\
+            <a href="#" class=" action-placement">topRightCorner</a>\n\
+            <a href="#" class=" action-placement">rightTop</a>\n\
+            <a href="#" class=" action-placement">right</a>\n\
+            <a href="#" class=" action-placement">rightBottom</a>\n\
+            <a href="#" class=" action-placement">bottomRightCorner</a>\n\
+            <a href="#" class=" active action-placement">bottomRight</a>\n\
+            <a href="#" class=" action-placement">bottom</a>\n\
+            <a href="#" class=" action-placement">bottomLeft</a>\n\
+            <a href="#" class=" action-placement">bottomLeftCorner</a>\n\
+            <a href="#" class=" action-placement">leftBottom</a>\n\
+            <a href="#" class=" action-placement">left</a>\n\
+            <a href="#" class=" action-placement">leftTop</a>\n\
+            </div><hr></div>'
+          }
+        }).data('iconpicker').show();
+      }).trigger('click');
+
+      
+      $('.icp').on('iconpickerSelected', function (e) {
+        $('.lead .picker-target').get(0).className = 'picker-target fa-3x ' +
+          e.iconpickerInstance.options.iconBaseClass + ' ' +
+          e.iconpickerInstance.options.fullClassFormatter(e.iconpickerValue);
+      });
+    });
+
+  </script>
+<script>
+    $('#datepicker').datepicker({
+      autoclose: true,
+      changeYear: true,
+    })
+  </script>
+<script>
+    $(function(){
+      $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+          localStorage.setItem('activeTab', $(e.target).attr('href'));
+      });
+      var activeTab = localStorage.getItem('activeTab');
+      if(activeTab){
+          $('#nav-tab a[href="' + activeTab + '"]').tab('show');
+      }
+    });
+  </script>
+<script>
+    $(function() {
+        $('form').attr('autocomplete','off');
+    });
+  </script>
+<script>
+    $(function() {
+      $('.js-example-basic-single').select2();
+    });
+  </script>
+</body></html>
