@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html data-bs-theme="" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content=" DAANPitara  - " name="description"/>
+<meta content="DannPitara" name="author"/>
+<title> DaanPitara </title>
+<link href="../assets/daan/assets/img/daanpitaralogo.png" rel="icon" type="image/x-icon"/>
+<!-- All Plugins -->
+<link href="../assets/daan/assets/css/animation.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/dropzone.min.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/rome.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/owl.carousel.min.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/owl.theme.default.min.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/rangeSlider.min.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/select2.min.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/magnific-popup.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/prism.css" rel="stylesheet"/>
+<!-- Icons CSS -->
+<link href="../assets/daan/assets/css/fontawesome.css" rel="stylesheet"/>
+<link href="../assets/daan/assets/css/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="../assets/daan/assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="main-wrapper">
+<!-- Start Navigation -->
+<div class="header header-light" data-sticky-element="">
+<div class="container-fluid">
+<nav class="navigation navigation-landscape" id="navigation">
+<div class="nav-header">
+<a class="nav-brand" href="#"><img alt="" class="logo" src="../assets/daan/assets/img/daanpitaralogo.png"/></a>
+<div class="nav-toggle"></div>
+<div class="mobile_nav">
+<ul>
+<li><a class="d-flex align-items-center" href="/admins">Dashboard</a></li>
+<li>
+<a class="btn btn-default btn-flat" href="/logout" onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+<i class="bi-power fs-6 me-1"></i>
+</a>
+<form action="/logout" id="logout-form" method="POST">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/> </form>
+</li>
+</ul>
+</div>
+</div>
+<div class="nav-menus-wrapper"><div class="mobLogos"><img alt="Logo" class="img-fluid lightLogo" src="assets/img/logo.svg"/></div><span class="nav-menus-wrapper-close-button">✕</span>
+<ul class="nav-menu">
+<li><a href="/">Home</a></li>
+<li><a href="JavaScript:Void(0);">Find NGO's<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<li><a href="/education-literacy/ngo">Education &amp; Literacy<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/health-medical-care/ngo">Health &amp; Medical Care<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/women-empowerment/ngo">Women Empowerment<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/child-welfare-protection/ngo">Child Welfare &amp; Protection<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/environment-climate-action/ngo">Environment &amp; Climate Action<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/disability-special-needs/ngo">Disability &amp; Special Needs<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/rural-development/ngo">Rural Development<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/animal-welfare/ngo">Animal Welfare<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/old-age-senior-citizen-support/ngo">Old Age &amp; Senior Citizen Support<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/poverty-alleviation-livelihood/ngo">Poverty Alleviation &amp; Livelihood<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/human-rights-legal-aid/ngo">Human Rights &amp; Legal Aid<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/disaster-relief-rehabilitation/ngo">Disaster Relief &amp; Rehabilitation<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/arts-culture-heritage-conservation/ngo">Arts, Culture &amp; Heritage Conservation<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/tribal-indigenous-community-support/ngo">Tribal &amp; Indigenous Community Support<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/blood-organ-tissue-donation/ngo">Blood, Organ &amp; Tissue Donation<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="JavaScript:Void(0);">Fundraiser form</a></li>
+<li><a href="/emergency-causes">Emergency </a></li>
+<li><a href="/faqs">FAQ's</a></li>
+<li><a href="/how-we-works">How We Work</a></li>
+<li><a href="/all-blogs">Blogs</a></li>
+<!--<li><a class="mob-addlisting light" href="JavaScript:Void(0);"><i class="bi bi-geo-alt-fill me-1"></i>Add Listing</a></li>-->
+</ul>
+<ul class="nav-menu nav-menu-social align-to-right">
+<li>
+<a class="d-flex align-items-center" href="/admins">
+<i class="bi bi-person-circle fs-6 me-1"></i><span class="navCl">Dashboard</span>
+</a>
+</li>
+<!--<li class="list-buttons">-->
+<!--    <a href="#"><i class="bi bi-geo-alt fs-6 me-1"></i>Add Listing</a>-->
+<!--</li>-->
+<li>
+<a href="/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+<i class="bi bi-box-arrow-right fs-6 me-1"></i><span class="navCl">Logout</span>
+</a>
+<form action="/logout" class="d-none" id="logout-form" method="POST">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/> </form>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="clearfix"></div> <!-- End Navigation -->
+<div id="main-wrapper">
+<style>
+   
+    h1, h2 {
+      color: #00695c;
+    }
+    .missioncaps ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .missioncaps ul li::before {
+      content: "✔️";
+      margin-right: 8px;
+      color: green;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 20px 0;
+      padding-left: 15px;
+      border-left: 4px solid #00695c;
+      color: #444;
+    }
+    .highlight {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #333;
+    }
+    .mission {
+      margin-top: 30px;
+      background: #e0f2f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+<style>
+    
+    h1, h2 {
+      color: #004d40;
+    }
+    blockquote {
+      font-style: italic;
+      color: #444;
+      border-left: 4px solid #004d40;
+      padding-left: 15px;
+      margin: 20px 0;
+    }
+    .highlight {
+      background: #e0f2f1;
+      padding: 10px 15px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .pillars {
+      margin-top: 25px;
+    }
+    .pillars li {
+      margin-bottom: 15px;
+      padding-left: 5px;
+    }
+    .pillars li::marker {
+      content: "⭐ ";
+      color: #00796b;
+      font-size: 1.2em;
+    }
+  </style>
+<section class="pb-5">
+<div class="container">
+<div class="row">
+<!-- Mission Headings -->
+<div class="row justify-content-center align-items-center">
+<div class="col-xl-10 col-lg-11 col-md-12 col-sm-12">
+<div class="secHeading-wrap text-center">
+<h3 class="sectionHeading">About <span class="text-primary"> DaanPitara</span></h3>
+<p>Explore our work process step by step and our mission</p>
+</div>
+</div>
+</div>
+<!-- Mission Headings -->
+<!-- Our Mission -->
+<div class="row justify-content-between align-items-center g-4 mb-5">
+<div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+<div class="missionImg">
+<img alt="" class="img-fluid" src="../assets/daan/assets/img/about-us.png"/>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+<div class="missioncaps">
+<p class="highlight">Empowering NGOs. Connecting Donors. Driving Impact.</p>
+<p><strong>DaanPitara</strong> is India’s first full-stack digital fundraising and CSR matchmaking platform — designed to help NGOs unlock growth, visibility, and sustainable funding through strategic digital tools.</p>
+<p>Born from a powerful life story and a purpose-driven vision, DaanPitara was founded by <strong>Asheesh Bhalla</strong>, a seasoned professional with 20+ years of experience in finance and fundraising. After a major health setback in 2023, he found deeper meaning by turning his pain into purpose — and began helping underserved NGOs tap into the digital era.</p>
+<p>Today, DaanPitara is a flagship initiative of <strong>Zheal Media Matters LLP</strong>, offering NGOs across India:</p>
+<ul>
+<li>Free Digital Listings (India’s first NGO Mosaic Map)</li>
+<li>CSR Fundraising Support with corporate matchmaking</li>
+<li>Google Ad Grants Enablement (worth $10,000/month)</li>
+<li>Content, SEO, Social Media, &amp; Campaign Design</li>
+<li>Compliance &amp; Reporting Support for FCRA, DARPAN, 80G, etc.</li>
+</ul>
+<p class="highlight">We believe helping 1 NGO is like helping 1,000 lives — and by helping 1,000 NGOs, we can impact crores of people. That’s the ripple effect DaanPitara is creating.</p>
+</div>
+</div>
+</div>
+<!-- Our Mission -->
+<div class="row justify-content-between align-items-center g-4 border-top">
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+<div class="counter-wrap text-center">
+<h2 class="mb-0"><span class="ctr text-primary me-1">145</span>K</h2>
+<p class="m-0">Daily New Visitors</p>
+</div>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+<div class="counter-wrap text-center">
+<h2 class="mb-0"><span class="ctr text-primary">670</span></h2>
+<p class="m-0">Active Listings</p>
+</div>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+<div class="counter-wrap text-center">
+<h2 class="mb-0"><span class="ctr text-primary">22</span></h2>
+<p class="m-0">Won Awards</p>
+</div>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+<div class="counter-wrap text-center">
+<h2 class="mb-0"><span class="ctr text-primary me-1">642</span>K</h2>
+<p class="m-0">Happy Customers</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container" style="margin-top:25px;">
+<h1>Our Vision</h1>
+<blockquote>
+                      To build a digitally empowered Bharat where every NGO – no matter how small – has the tools, visibility, and voice to transform lives at scale.
+                    </blockquote>
+<p>We envision an India where non-profits are no longer digitally invisible, where every act of giving is powered by data, design, and digital strategy.</p>
+<p>A future where donations are driven by trust, impact is amplified by technology, and fundraising is no longer a struggle—but a strength.</p>
+<div class="highlight">
+                      At DaanPitara, we believe that <strong>“Digital Seva is Desh Seva.”</strong><br/>
+                      And in this new Bharat, every NGO matters. Every donor counts. Every click can change a life.
+                    </div>
+<h2>🎯 Our Mission</h2>
+<blockquote>
+                      💡 Transform non-profitability into profitability through digital-first fundraising tools, strategic storytelling, and CSR matchmaking.
+                    </blockquote>
+<h3>Our 5 Mission Pillars:</h3>
+<ol class="pillars">
+<li>
+<strong>📍 Free Digital Identity for Every NGO</strong><br/>
+                        Through India’s first NGO Map Mosaic, we give NGOs visibility, credibility, and a platform to grow — even without a website.
+                      </li>
+<li>
+<strong>🚀 Enable Fundraising at Scale</strong><br/>
+                        From Google Ad Grants (₹8L/month ad budget) to emotional storytelling, WhatsApp campaigns, and email drip funnels — we power India’s NGOs to attract donations like pros.
+                      </li>
+<li>
+<strong>🤝 Bridge NGOs with CSR &amp; Donor Networks</strong><br/>
+                        We don’t just consult — we matchmake NGOs with verified CSR heads, corporate donors, and global philanthropists ready to support real impact.
+                      </li>
+<li>
+<strong>⚙️ Simplify Compliance &amp; Growth Readiness</strong><br/>
+                        We guide NGOs through the maze of FCRA, DARPAN, 80G, 12A, CSR-1, making them eligible for long-term, high-value fundraising success.
+                      </li>
+<li>
+<strong>🌍 Create a One-Nation NGO Ecosystem</strong><br/>
+                        Through our initiative Mission Mosaic, we aim to list 1,000 NGOs by 15 August 2025 — building India’s most trusted Digital Bharat NGO Directory.
+                      </li>
+</ol>
+</div>
+</section>
+<footer class="footer skin-dark-footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-md-5 col-lg-12 col-xl-4">
+<div class="footer-widget pe-xl-4 mb-5">
+<div class="footerLogo"><img alt="Footer Logo" class="img-fluid" src="../assets/daan/assets/img/daanpitaralogo.png" width="160"/></div>
+<div class="footerText"><p>© DAANPitara  2025 Design By RTM</p></div>
+<div class="footerSocialwrap">
+<ul class="footersocial">
+<li><a class="social-link" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+<li><a class="social-link" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a class="social-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a class="social-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-6 col-md-4 offset-md-3 col-lg-3 offset-lg-0 col-xl-2">
+<div class="footer-widget mb-5 mb-md-5 mb-lg-0">
+<h4 class="widget-title text-pri">Useful Links</h4>
+<ul class="footer-menu">
+<li><a href="/about-us">About DAANPitara </a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/terms-n-condition">Terms &amp; Condition</a></li>
+<li><a href="/refun-cancellation-policy">Refund Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+<div class="footer-widget mb-5 mb-md-5 mb-lg-0">
+<h4 class="widget-title">Getting Started</h4>
+<ul class="footer-menu">
+<li><a href="#">Trust &amp; Safety</a></li>
+<li><a href="#">Investor Relations</a></li>
+<li><a href="#">Connect Guidelines</a></li>
+<li><a href="#">Terms of Services</a></li>
+<li><a href="#">Paid Advertising</a></li>
+<li><a href="#"> DAANPitara  Blog</a></li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+<div class="footer-widget">
+<h4 class="widget-title"> DAANPitara  Business</h4>
+<ul class="footer-menu">
+<li><a href="#"> DAANPitara  for Business</a></li>
+<li><a href="#">Advertise on DAANPitara </a></li>
+<li><a href="#">Login on DAANPitara </a></li>
+<li><a href="#">Claim for Business Page</a></li>
+<li><a href="#">Support for B2B</a></li>
+<li><a href="#">Table Management</a></li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+<div class="footer-widget">
+<h4 class="widget-title">Get In Touch</h4>
+<div class="contactInfowrap">
+<div class="singleinfo">
+<div class="icons"><i class="bi bi-geo-alt-fill"></i></div>
+<div class="caps">
+<h5 class="title">706 First Floor, Phase 4, Sector 59, Mohali – 160059</h5>
+<p class="subs">Reach Us</p>
+</div>
+</div>
+<div class="singleinfo">
+<div class="icons"><i class="bi bi-telephone-outbound"></i></div>
+<div class="caps">
+<h5 class="title">98765 77721/h5&gt;
+											</h5><p class="subs">Mon - Sat 10am - 6PM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Log In Modal -->
+<div aria-hidden="true" aria-labelledby="loginmodal" class="modal fade" id="login" role="dialog" tabindex="-1">
+<div class="modal-dialog" id="loginmodal">
+<div class="modal-content">
+<div class="modal-header justify-content-end border-0 pb-0">
+<a aria-label="Close" class="square--30 circle bg-light-danger text-danger" data-bs-dismiss="modal" href="#"><i class="fa-solid fa-xmark"></i></a>
+</div>
+<div class="modal-body px-4">
+<!-- Heading -->
+<div class="text-center mb-5">
+<h2>Welcome Back</h2>
+<p class="fs-6">Login to manage your account.</p>
+</div>
+<!-- End Heading -->
+<!-- Form -->
+<form action="/login" class="clearfix" method="POST" name="login-form">
+<input name="_token" type="hidden" value="dYiKVKlxS5BH4CdLtBMKJRHk5DTC68b6nbbRgIXE"/> <!-- Form -->
+<!--<div class="row align-items-center justify-content-between g-3 mb-4">-->
+<!--	<div class="col-xl-6 col-lg-6 col-md-6"><a href="#" class="btn btn-outline-secondary border rounded-3 text-md px-lg-2 full-width"><img src="/daan/assets/img/google.png" class="img-fluid me-2" width="16" alt="">Login with Google</a></div>-->
+<!--	<div class="col-xl-6 col-lg-6 col-md-6"><a href="#" class="btn btn-outline-secondary border rounded-3 text-md px-lg-2 full-width"><img src="/daan/assets/img/facebook.png" class="img-fluid me-2" width="16" alt="">Login with Facebook</a></div>-->
+<!--</div>-->
+<!-- End Form -->
+<!-- Form -->
+<div class="mb-4">
+<label class="form-label" for="email01">Your email</label>
+<input class="form-control" id="email01" name="email" placeholder="email@site.com" required="" type="email"/>
+<span class="invalid-feedback">Please enter a valid email address.</span>
+</div>
+<!-- End Form -->
+<!-- Form -->
+<div class="mb-4">
+<div class="d-flex justify-content-between align-items-center">
+<label class="form-label" for="pass01">Password</label>
+<a class="link fw-medium text-primary" href="#">Forgot Password?</a>
+</div>
+<div class="input-group-merge">
+<input class="form-control" id="pass01" name="password" placeholder="characters required" required="" type="password"/>
+</div>
+<span class="invalid-feedback">Please enter a valid password.</span>
+</div>
+<!-- End Form -->
+<div class="d-grid mb-3">
+<button class="btn btn-primary fw-medium" type="submit">Log in</button>
+</div>
+<div class="text-center">
+<p>Don't have an account yet? <a class="link fw-medium text-primary" href="/register">Sign up here</a></p>
+</div>
+</form>
+<!-- End Form -->
+</div>
+<div class="modal-footer p-3 border-top">
+<!--<div class="d-flex align-items-center justify-content-between gap-3">-->
+<!--	<div class="brand px-lg-4 px-3"><img src="/daan/assets/img/brand/logo-1.png" class="img-fluid" alt=""></div>-->
+<!--	<div class="brand px-lg-4 px-3"><img src="/daan/assets/img/brand/logo-3.png" class="img-fluid" alt=""></div>-->
+<!--	<div class="brand px-lg-4 px-3"><img src="/daan/assets/img/brand/logo-2.png" class="img-fluid" alt=""></div>-->
+<!--</div>-->
+</div>
+</div>
+</div>
+</div>
+<!-- End Modal -->
+<!-- Cart Slider Wrap -->
+<div aria-labelledby="cartSliderLabel" class="offcanvas offcanvas-end" data-bs-scroll="true" id="cartSlider" tabindex="-1">
+<div class="offcanvas-header border-bottom">
+<h6 class="offcanvas-title" id="cartSliderLabel">Your cart Items</h6>
+<a aria-label="Close" class="square--35 circle text-muted-2 border" data-bs-dismiss="offcanvas" href="JavaScript:Void(0);"><i class="bi bi-x"></i></a>
+</div>
+<div class="offcanvas-body">
+<div class="cartItems w-100">
+<div class="d-flex align-items-center justify-content-start flex-column gap-3">
+<!-- Single Item -->
+<!-- Single Item -->
+<!--<div class="singleCartitem d-flex align-items-center justify-content-between gap-3 w-100">-->
+<!--	<div class="d-flex align-items-center justify-content-start gap-3">-->
+<!--		<div class="cartiteThumb"><figure class="d-block m-0"><img src="/daan/assets/img/list-4.jpg" class="img-fluid rounded-2" width="60" alt=""></figure></div>-->
+<!--		<div class="cartCaption">-->
+<!--			<h6 class="lh-base m-0">Premium Package</h6>-->
+<!--			<p class="m-0">1xRs22.10</p>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="removeItemcart"><a href="#" class="square--35 circle badge-secondary"><i class="bi bi-x"></i></a></div>-->
+<!--</div>-->
+</div>
+<div class="cartSubtotal w-100 py-3 border-top mt-3">
+<h6 class="m-0">Subtotal: Rs128.75</h6>
+</div>
+</div>
+<div class="cartButtons w-100 py-2">
+<div class="d-flex align-items-center justify-content-center flex-wrap gap-2">
+<a class="btn btn-md btn-light-primary fw-medium flex-fill" href="viewcart.html">View Cart</a>
+<a class="btn btn-md btn-primary fw-medium flex-fill" href="#">Checkout</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Search Slider Wrap  -->
+<div aria-labelledby="searchSliderLabel" class="offcanvas offcanvas-top h-auto" id="searchSlider" tabindex="-1">
+<div class="offcanvas-body" id="searchSliderLabel">
+<div class="searchForm w-100 mb-3">
+<div class="p-2 ps-3 rounded border d-flex align-items-center justify-content-between gap-2">
+<div class="searchicons"><span><i class="bi bi-search fs-4 opacity-75"></i></span></div>
+<div class="flex-fill"><input class="form-control border-0 ps-0" placeholder="What are you looking for?" type="search"/></div>
+<div class="closeSlides"><a aria-label="Close" class="square--35 circle text-muted-2 border" data-bs-dismiss="offcanvas" href="JavaScript:Void(0);"><i class="bi bi-x"></i></a></div>
+</div>
+</div>
+<div class="popularSearches d-flex align-items-center justify-content-center gap-2 flex-wrap">
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+<!------------Alll Script-------------->
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="../assets/daan/assets/js/jquery.min.js"></script>
+<script src="../assets/daan/assets/js/popper.min.js"></script>
+<script src="../assets/daan/assets/js/bootstrap.min.js"></script>
+<script src="../assets/daan/assets/js/dropzone.min.js"></script>
+<script src="../assets/daan/assets/js/counterup.min.js"></script>
+<script src="../assets/daan/assets/js/rangeslider.js"></script>
+<script src="../assets/daan/assets/js/select2.min.js"></script>
+<script src="../assets/daan/assets/js/owl.carousel.min.js"></script>
+<script src="../assets/daan/assets/js/rome.js"></script>
+<script src="../assets/daan/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="../assets/daan/assets/js/custom.js"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- ============================================================== -->
+</div></body></html>

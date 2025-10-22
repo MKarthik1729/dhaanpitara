@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html data-bs-theme="" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content=" DAANPitara  - " name="description"/>
+<meta content="DannPitara" name="author"/>
+<title> DaanPitara </title>
+<link href="../../assets/daan/assets/img/daanpitaralogo.png" rel="icon" type="image/x-icon"/>
+<!-- All Plugins -->
+<link href="../../assets/daan/assets/css/animation.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/dropzone.min.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/rome.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/owl.carousel.min.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/owl.theme.default.min.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/rangeSlider.min.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/select2.min.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/magnific-popup.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/prism.css" rel="stylesheet"/>
+<!-- Icons CSS -->
+<link href="../../assets/daan/assets/css/fontawesome.css" rel="stylesheet"/>
+<link href="../../assets/daan/assets/css/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="../../assets/daan/assets/css/style.css" rel="stylesheet"/>
+<style type="text/css">#st-1 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  direction: ltr;
+  display: block;
+  opacity: 1;
+  text-align: center;
+  z-index: 94034;
+}
+#st-1.st-animated {
+  -moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -ms-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -o-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -webkit-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+}
+#st-1.st-hidden {
+  opacity: 0;
+}
+
+#st-1.st-preview {
+  display: none!important;
+  opacity: 0!important;
+}
+#st-1.st-hide {
+  display: none;
+}
+#st-1 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: opacity 0.2s ease-in, top 0.2s ease-in; -ms-transition: opacity 0.2s ease-in, top 0.2s ease-in; -o-transition: opacity 0.2s ease-in, top 0.2s ease-in; -webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in; transition: opacity 0.2s ease-in, top 0.2s ease-in;
+  -moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 8px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+#st-1 .st-btn:last-child {
+  margin-right: 0;
+}
+#st-1 .st-btn > svg {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 8px;
+  vertical-align: top;
+}
+#st-1 .st-btn > img {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 8px;
+  vertical-align: top;
+}
+#st-1 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  min-width: 60px;
+  opacity: 1;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+}
+#st-1.st-has-labels .st-btn {
+  min-width: 120px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label {
+  min-width: 50px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label > span {
+  display: none;
+}
+#st-1.st-has-labels .st-btn.st-hide-label > span {
+  display: none;
+}
+#st-1 .st-total {
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 12px;
+  margin-right: 0;
+  max-width: 80px;
+  padding: 4px 8px;
+  text-align: center;
+}
+#st-1 .st-total.st-hidden {
+  display: none;
+}
+#st-1 .st-total > span {
+  font-size: 16px;
+  line-height: 17px;
+  display: block;
+  padding: 0;
+}
+#st-1 .st-total > span.st-shares {
+  font-size: 9px;
+  line-height: 9px;
+}
+#st-1.st-justified {
+  display: flex;
+  text-align: center;
+}
+#st-1.st-justified .st-btn {
+  -moz-flex: 1;
+-ms-flex: 1;
+-webkit-flex: 1;
+flex: 1;
+}#st-1 .st-btn:hover {
+  opacity: .8;
+  top: -4px;
+}#st-1 .st-btn[data-network='facebook'] {
+  background-color: #4267B2
+}
+#st-1 .st-btn[data-network='facebook'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='facebook'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='twitter'] {
+  background-color: #000000
+}
+#st-1 .st-btn[data-network='twitter'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='twitter'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='pinterest'] {
+  background-color: #CB2027
+}
+#st-1 .st-btn[data-network='pinterest'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='pinterest'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='email'] {
+  background-color: #7d7d7d
+}
+#st-1 .st-btn[data-network='email'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='email'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='sms'] {
+  background-color: #ffbd00
+}
+#st-1 .st-btn[data-network='sms'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='sms'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='sharethis'] {
+  background-color: #95D03A
+}
+#st-1 .st-btn[data-network='sharethis'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='sharethis'] > span {
+  color: #fff
+}#st-1 .st-btn[data-network='snapchat'] > span {
+  color: #333};
+}</style></head>
+<body style="overflow: visible;">
+<div id="main-wrapper">
+<!-- Start Navigation -->
+<div class="header header-light header-fixed" data-sticky-element="">
+<div class="container-fluid">
+<nav class="navigation navigation-landscape" id="navigation">
+<div class="nav-header">
+<a class="nav-brand" href="#"><img alt="" class="logo" src="../../assets/daan/assets/img/daanpitaralogo.png"/></a>
+<div class="nav-toggle"></div>
+<div class="mobile_nav">
+<ul>
+<li><a class="d-flex align-items-center" href="/admins">Dashboard</a></li>
+<li>
+<a class="btn btn-default btn-flat" href="/logout" onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+<i class="bi-power fs-6 me-1"></i>
+</a>
+<form action="/logout" id="logout-form" method="POST">
+<input name="_token" type="hidden" value="OFTek88akCC8hhqptOz49dOZQH4le9W0slzp5zNQ"/> </form>
+</li>
+</ul>
+</div>
+</div>
+<div class="nav-menus-wrapper"><div class="mobLogos"><img alt="Logo" class="img-fluid lightLogo" src="assets/img/logo.svg"/></div><span class="nav-menus-wrapper-close-button">✕</span>
+<ul class="nav-menu">
+<li><a href="/">Home</a></li>
+<li><a href="JavaScript:Void(0);">Find NGO's<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<li><a href="/education-literacy/ngo">Education &amp; Literacy<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/health-medical-care/ngo">Health &amp; Medical Care<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/women-empowerment/ngo">Women Empowerment<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/child-welfare-protection/ngo">Child Welfare &amp; Protection<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/environment-climate-action/ngo">Environment &amp; Climate Action<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/disability-special-needs/ngo">Disability &amp; Special Needs<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/rural-development/ngo">Rural Development<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/animal-welfare/ngo">Animal Welfare<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/old-age-senior-citizen-support/ngo">Old Age &amp; Senior Citizen Support<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/poverty-alleviation-livelihood/ngo">Poverty Alleviation &amp; Livelihood<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/human-rights-legal-aid/ngo">Human Rights &amp; Legal Aid<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/disaster-relief-rehabilitation/ngo">Disaster Relief &amp; Rehabilitation<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/arts-culture-heritage-conservation/ngo">Arts, Culture &amp; Heritage Conservation<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/tribal-indigenous-community-support/ngo">Tribal &amp; Indigenous Community Support<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+<li><a href="/blood-organ-tissue-donation/ngo">Blood, Organ &amp; Tissue Donation<span class="submenu-indicator"></span><span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></a>
+<ul class="nav-dropdown nav-submenu">
+<!--<li><a href="#">Primary and secondary education</a></li>                                    -->
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="JavaScript:Void(0);">Fundraiser form</a></li>
+<li><a href="/emergency-causes">Emergency </a></li>
+<li><a href="/faqs">FAQ's</a></li>
+<li><a href="/how-we-works">How We Work</a></li>
+<li><a href="/all-blogs">Blogs</a></li>
+<!--<li><a class="mob-addlisting light" href="JavaScript:Void(0);"><i class="bi bi-geo-alt-fill me-1"></i>Add Listing</a></li>-->
+</ul>
+<ul class="nav-menu nav-menu-social align-to-right">
+<li>
+<a class="d-flex align-items-center" href="/admins">
+<i class="bi bi-person-circle fs-6 me-1"></i><span class="navCl">Dashboard</span>
+</a>
+</li>
+<!--<li class="list-buttons">-->
+<!--    <a href="#"><i class="bi bi-geo-alt fs-6 me-1"></i>Add Listing</a>-->
+<!--</li>-->
+<li>
+<a href="/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+<i class="bi bi-box-arrow-right fs-6 me-1"></i><span class="navCl">Logout</span>
+</a>
+<form action="/logout" class="d-none" id="logout-form" method="POST">
+<input name="_token" type="hidden" value="OFTek88akCC8hhqptOz49dOZQH4le9W0slzp5zNQ"/> </form>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="clearfix"></div> <!-- End Navigation -->
+<div id="main-wrapper">
+<!-- Start main-content -->
+<div class="main-content">
+<section>
+<div class="container">
+<!-- Search Form -->
+<div class="row justify-content-start align-items-center">
+<div class="col-xl-7 col-lg-9 col-md-12 col-sm-12">
+<div class="position-relative">
+<h1 class="xl-heading">The Future of CSR Funding in India: What You Need to Know</h1>
+<nav class="breadcrumbs" id="breadcrumbs">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Blog</a></li>
+<li>The Future of CSR Funding in India: What You Need to Know</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<!-- </row> -->
+</div>
+</section>
+<section class="pt-0">
+<div class="container">
+<div class="row g-4">
+<!-- Article content -->
+<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+<div class="blogDetails d-flex align-items-start gap-4 flex-column w-100">
+<!-- First Card -->
+<div class="card shadow-sm w-100">
+<div class="blogThumb">
+<img alt="Blog Thumb" class="img-fluid" src="../../assets/images/blog/1756571934top-view-origami-chain-people-with-globe.jpg"/>
+</div>
+<div class="card-body">
+<!-- Badge -->
+<!--<div class="d-inline-flex mb-2"><span class="badge badge-xs badge-primary rounded-pill">Software &amp; Tools</span></div>-->
+<!-- Title -->
+<h1 class="fs-3">The Future of CSR Funding in India: What You Need to Know</h1>
+<div class="d-flex align-items-center justify-content-start flex-wrap gap-3 mb-3">
+<div>By <a class="link" href="#">Admin</a></div>
+<div>30th  </div>
+<div><a class="link" href="#">0 Comments</a></div>
+</div>
+<p><a href="../"><strong>Corporate Social Responsibility</strong></a> (CSR) in India has evolved significantly since it became a requirement under the Companies Act in 2013. Nowadays, it’s not just about giving donations or charity; it’s about creating lasting impact, aligning with global ESG goals, and shaping the future of India. Here’s what you should really know about the direction CSR is taking:</p>
+<p><strong>📈 CSR Budgets Are Growing Fast</strong></p>
+<p>Indian companies are stepping up their game when it comes to CSR spending. In the fiscal year 2023–24, businesses collectively shelled out around ₹35,000 crore. By 2035, that number could soar to over ₹1.2 lakh crore. That’s a massive amount of resources available for driving social change.</p>
+<p>👉 But here’s the twist: a large chunk of this funding still goes to a handful of states and bigger NGOs, leaving smaller, rural, and tribal areas in the lurch. Ensuring fair distribution is set to be one of the hottest topics in the next decade.</p>
+<p><strong>⚖️ Regulations Are Getting Tighter</strong></p>
+<p>The Ministry of Corporate Affairs has rolled out a digital CSR-1 filing system, and there’s buzz about integrating ESG (Environment, Social, Governance) practices right into the Companies Act. This means CSR will no longer be seen as a “nice to have”—it’s becoming a fundamental governance duty for boards and directors. Expect compliance, transparency, and reporting standards to tighten up.</p>
+<p><strong>💻 Tech Will Drive Transparency</strong></p>
+<p>The days of vague CSR reports are behind us. Companies are increasingly turning to:</p>
+<p>- Data dashboards for real-time progress tracking,</p>
+<p>- Digital storytelling to showcase their impact, and</p>
+<p>- AI and analytics to measure outcomes.</p>
+<p>This shift is fantastic news for NGOs that embrace technology, making them more appealing to corporate partners.</p>
+<p><strong>🌱 Focus Areas Are Expanding</strong></p>
+<p>CSR is broadening its horizons beyond just education and health. The new key areas of focus include</p>
+<p>- Climate action (think renewable energy, water conservation, and sustainable agriculture)</p>
+<p>- Inclusion (gender equality, diversity, and local employment)</p>
+<p>- Employee well-being (mental health, financial literacy, and community engagement)</p>
+</div>
+<div class="card-footer border-top bg-white">
+<div class="d-md-flex justify-content-between align-items-center">
+<!-- Title -->
+<h6 class="mb-0">Was this article helpful?</h6>
+<small class="py-3 p-md-0 d-block">40 out of 84 found this helpful</small>
+<!-- Check buttons -->
+<div aria-label="Basic radio toggle button group" class="btn-group" role="group">
+<!-- Yes button -->
+<input class="btn-check" id="btnradio1" name="btnradio" type="radio"/>
+<label class="btn btn-outline-secondary btn-sm mb-0" for="btnradio1"><i class="fa-regular fa-thumbs-up me-1"></i> Yes</label>
+<!-- No button -->
+<input class="btn-check" id="btnradio2" name="btnradio" type="radio"/>
+<label class="btn btn-outline-secondary btn-sm mb-0" for="btnradio2"> No <i class="fa-regular fa-thumbs-down ms-1"></i></label>
+</div>
+</div>
+</div>
+</div>
+<!-- First Card -->
+<script async="" src="https://buttons-config.sharethis.com/js/6053b1894d1bac0012adf078.js"></script><script async="async" src="https://platform-api.sharethis.com/js/sharethis.js#property=6053b1894d1bac0012adf078&amp;product=inline-share-buttons" type="text/javascript"></script>
+<div class="col-md-12">
+<div class="sharethis-inline-share-buttons st-center st-has-labels st-inline-share-buttons st-animated" id="st-1"><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+<img alt="facebook sharing button" src="https://platform-cdn.sharethis.com/img/facebook.svg"/>
+<span class="st-label">Share</span>
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+<img alt="twitter sharing button" src="https://platform-cdn.sharethis.com/img/twitter.svg"/>
+<span class="st-label">Tweet</span>
+</div><div class="st-btn" data-network="pinterest" style="display: inline-block;">
+<img alt="pinterest sharing button" src="https://platform-cdn.sharethis.com/img/pinterest.svg"/>
+<span class="st-label">Pin</span>
+</div><div class="st-btn" data-network="email" style="display: inline-block;">
+<img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg"/>
+<span class="st-label">Email</span>
+</div><div class="st-btn" data-network="sms" style="display: inline-block;">
+<img alt="sms sharing button" src="https://platform-cdn.sharethis.com/img/sms.svg"/>
+<span class="st-label">Share</span>
+</div><div class="st-btn st-last st-remove-label" data-network="sharethis" style="display: inline-block;">
+<img alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg"/>
+<span class="st-label">Share</span>
+</div></div>
+</div>
+<!-- Second Card -->
+<!-- Second Card -->
+</div>
+</div>
+<!-- Blog Sidebar -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+<div class="blogSidebar d-flex flex-column align-items-start gap-4">
+<!-- Search -->
+<div class="card">
+<div class="card-header">
+<h4>Search</h4>
+</div>
+<div class="card-body">
+<div class="p-2 ps-3 rounded border d-flex align-items-center justify-content-between gap-2">
+<div class="searchicons"><span><i class="bi bi-search fs-4 opacity-75"></i></span></div>
+<div class="flex-fill"><input class="form-control border-0 ps-0" placeholder="What are you looking for?" type="search"/></div>
+</div>
+</div>
+</div>
+<!-- Search -->
+<div class="card">
+<div class="card-header">
+<h4>Most Viewd Articles</h4>
+</div>
+<div class="card-body">
+<div class="similarPosts">
+<ul>
+<li>
+<div class="postThumb"><a class="postImg" href="/blogs-detail/a-day-in-the-life-of-an-ngo-volunteer-making-a-difference-with-daanpitara"><figure><img alt="Post Image" class="img-fluid rounded" src="../../assets/images/blog/1760190300Daan%20pitara%20linkdin%20post%20_20251010_131418_0000.png"/></figure></a></div>
+<div class="postCaps">
+<h6><a class="link" href="/blogs-detail/a-day-in-the-life-of-an-ngo-volunteer-making-a-difference-with-daanpitara">The Future of CSR Funding in India: What You Need to Know</a></h6>
+<span>30th  </span>
+</div>
+</li>
+<li>
+<div class="postThumb"><a class="postImg" href="/blogs-detail/csr-and-digital-bharat-empowering-rural-youth-beyond-the-divide%0D%0A"><figure><img alt="Post Image" class="img-fluid rounded" src="../../assets/images/blog/1757439202young-asian-woman-cooking-her-friend-enjoy-make-meal-pan-they-are-talk-laugh-with-fun-together-while-camping-nature-park.jpg"/></figure></a></div>
+<div class="postCaps">
+<h6><a class="link" href="/blogs-detail/csr-and-digital-bharat-empowering-rural-youth-beyond-the-divide%0D%0A">The Future of CSR Funding in India: What You Need to Know</a></h6>
+<span>30th  </span>
+</div>
+</li>
+<li>
+<div class="postThumb"><a class="postImg" href="/blogs-detail/the-future-of-csr-funding-in-india-what-you-need-to-know%0D%0A"><figure><img alt="Post Image" class="img-fluid rounded" src="../../assets/images/blog/1756571934top-view-origami-chain-people-with-globe.jpg"/></figure></a></div>
+<div class="postCaps">
+<h6><a class="link" href="/blogs-detail/the-future-of-csr-funding-in-india-what-you-need-to-know%0D%0A">The Future of CSR Funding in India: What You Need to Know</a></h6>
+<span>30th  </span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Search -->
+<!-- Share Links -->
+<div class="card">
+<div class="card-header">
+<h4>Social Share</h4>
+</div>
+<div class="card-body">
+<div class="blogShare">
+<ul>
+<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+<li><a href="#"><i class="bi bi-twitter"></i></a></li>
+<li><a href="#"><i class="bi bi-instagram"></i></a></li>
+<li><a href="#"><i class="bi bi-pinterest"></i></a></li>
+<li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- end main-content -->
+</div>
+<footer class="footer skin-dark-footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-md-5 col-lg-12 col-xl-4">
+<div class="footer-widget pe-xl-4 mb-5">
+<div class="footerLogo"><img alt="Footer Logo" class="img-fluid" src="../../assets/daan/assets/img/daanpitaralogo.png" width="160"/></div>
+<div class="footerText"><p>© DAANPitara  2025 Design By RTM</p></div>
+<div class="footerSocialwrap">
+<ul class="footersocial">
+<li><a class="social-link" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+<li><a class="social-link" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a class="social-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a class="social-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-6 col-md-4 offset-md-3 col-lg-3 offset-lg-0 col-xl-2">
+<div class="footer-widget mb-5 mb-md-5 mb-lg-0">
+<h4 class="widget-title text-pri">Useful Links</h4>
+<ul class="footer-menu">
+<li><a href="/about-us">About DAANPitara </a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/terms-n-condition">Terms &amp; Condition</a></li>
+<li><a href="/refun-cancellation-policy">Refund Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+<div class="footer-widget mb-5 mb-md-5 mb-lg-0">
+<h4 class="widget-title">Getting Started</h4>
+<ul class="footer-menu">
+<li><a href="#">Trust &amp; Safety</a></li>
+<li><a href="#">Investor Relations</a></li>
+<li><a href="#">Connect Guidelines</a></li>
+<li><a href="#">Terms of Services</a></li>
+<li><a href="#">Paid Advertising</a></li>
+<li><a href="#"> DAANPitara  Blog</a></li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+<div class="footer-widget">
+<h4 class="widget-title"> DAANPitara  Business</h4>
+<ul class="footer-menu">
+<li><a href="#"> DAANPitara  for Business</a></li>
+<li><a href="#">Advertise on DAANPitara </a></li>
+<li><a href="#">Login on DAANPitara </a></li>
+<li><a href="#">Claim for Business Page</a></li>
+<li><a href="#">Support for B2B</a></li>
+<li><a href="#">Table Management</a></li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+<div class="footer-widget">
+<h4 class="widget-title">Get In Touch</h4>
+<div class="contactInfowrap">
+<div class="singleinfo">
+<div class="icons"><i class="bi bi-geo-alt-fill"></i></div>
+<div class="caps">
+<h5 class="title">706 First Floor, Phase 4, Sector 59, Mohali – 160059</h5>
+<p class="subs">Reach Us</p>
+</div>
+</div>
+<div class="singleinfo">
+<div class="icons"><i class="bi bi-telephone-outbound"></i></div>
+<div class="caps">
+<h5 class="title">98765 77721/h5&gt;
+											</h5><p class="subs">Mon - Sat 10am - 6PM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Log In Modal -->
+<div aria-hidden="true" aria-labelledby="loginmodal" class="modal fade" id="login" role="dialog" tabindex="-1">
+<div class="modal-dialog" id="loginmodal">
+<div class="modal-content">
+<div class="modal-header justify-content-end border-0 pb-0">
+<a aria-label="Close" class="square--30 circle bg-light-danger text-danger" data-bs-dismiss="modal" href="#"><i class="fa-solid fa-xmark"></i></a>
+</div>
+<div class="modal-body px-4">
+<!-- Heading -->
+<div class="text-center mb-5">
+<h2>Welcome Back</h2>
+<p class="fs-6">Login to manage your account.</p>
+</div>
+<!-- End Heading -->
+<!-- Form -->
+<form action="/login" class="clearfix" method="POST" name="login-form">
+<input name="_token" type="hidden" value="OFTek88akCC8hhqptOz49dOZQH4le9W0slzp5zNQ"/> <!-- Form -->
+<!--<div class="row align-items-center justify-content-between g-3 mb-4">-->
+<!--	<div class="col-xl-6 col-lg-6 col-md-6"><a href="#" class="btn btn-outline-secondary border rounded-3 text-md px-lg-2 full-width"><img src="/daan/assets/img/google.png" class="img-fluid me-2" width="16" alt="">Login with Google</a></div>-->
+<!--	<div class="col-xl-6 col-lg-6 col-md-6"><a href="#" class="btn btn-outline-secondary border rounded-3 text-md px-lg-2 full-width"><img src="/daan/assets/img/facebook.png" class="img-fluid me-2" width="16" alt="">Login with Facebook</a></div>-->
+<!--</div>-->
+<!-- End Form -->
+<!-- Form -->
+<div class="mb-4">
+<label class="form-label" for="email01">Your email</label>
+<input class="form-control" id="email01" name="email" placeholder="email@site.com" required="" type="email"/>
+<span class="invalid-feedback">Please enter a valid email address.</span>
+</div>
+<!-- End Form -->
+<!-- Form -->
+<div class="mb-4">
+<div class="d-flex justify-content-between align-items-center">
+<label class="form-label" for="pass01">Password</label>
+<a class="link fw-medium text-primary" href="#">Forgot Password?</a>
+</div>
+<div class="input-group-merge">
+<input class="form-control" id="pass01" name="password" placeholder="characters required" required="" type="password"/>
+</div>
+<span class="invalid-feedback">Please enter a valid password.</span>
+</div>
+<!-- End Form -->
+<div class="d-grid mb-3">
+<button class="btn btn-primary fw-medium" type="submit">Log in</button>
+</div>
+<div class="text-center">
+<p>Don't have an account yet? <a class="link fw-medium text-primary" href="/register">Sign up here</a></p>
+</div>
+</form>
+<!-- End Form -->
+</div>
+<div class="modal-footer p-3 border-top">
+<!--<div class="d-flex align-items-center justify-content-between gap-3">-->
+<!--	<div class="brand px-lg-4 px-3"><img src="/daan/assets/img/brand/logo-1.png" class="img-fluid" alt=""></div>-->
+<!--	<div class="brand px-lg-4 px-3"><img src="/daan/assets/img/brand/logo-3.png" class="img-fluid" alt=""></div>-->
+<!--	<div class="brand px-lg-4 px-3"><img src="/daan/assets/img/brand/logo-2.png" class="img-fluid" alt=""></div>-->
+<!--</div>-->
+</div>
+</div>
+</div>
+</div>
+<!-- End Modal -->
+<!-- Cart Slider Wrap -->
+<div aria-labelledby="cartSliderLabel" class="offcanvas offcanvas-end" data-bs-scroll="true" id="cartSlider" tabindex="-1">
+<div class="offcanvas-header border-bottom">
+<h6 class="offcanvas-title" id="cartSliderLabel">Your cart Items</h6>
+<a aria-label="Close" class="square--35 circle text-muted-2 border" data-bs-dismiss="offcanvas" href="JavaScript:Void(0);"><i class="bi bi-x"></i></a>
+</div>
+<div class="offcanvas-body">
+<div class="cartItems w-100">
+<div class="d-flex align-items-center justify-content-start flex-column gap-3">
+<!-- Single Item -->
+<!-- Single Item -->
+<!--<div class="singleCartitem d-flex align-items-center justify-content-between gap-3 w-100">-->
+<!--	<div class="d-flex align-items-center justify-content-start gap-3">-->
+<!--		<div class="cartiteThumb"><figure class="d-block m-0"><img src="/daan/assets/img/list-4.jpg" class="img-fluid rounded-2" width="60" alt=""></figure></div>-->
+<!--		<div class="cartCaption">-->
+<!--			<h6 class="lh-base m-0">Premium Package</h6>-->
+<!--			<p class="m-0">1xRs22.10</p>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="removeItemcart"><a href="#" class="square--35 circle badge-secondary"><i class="bi bi-x"></i></a></div>-->
+<!--</div>-->
+</div>
+<div class="cartSubtotal w-100 py-3 border-top mt-3">
+<h6 class="m-0">Subtotal: Rs128.75</h6>
+</div>
+</div>
+<div class="cartButtons w-100 py-2">
+<div class="d-flex align-items-center justify-content-center flex-wrap gap-2">
+<a class="btn btn-md btn-light-primary fw-medium flex-fill" href="viewcart.html">View Cart</a>
+<a class="btn btn-md btn-primary fw-medium flex-fill" href="#">Checkout</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Search Slider Wrap  -->
+<div aria-labelledby="searchSliderLabel" class="offcanvas offcanvas-top h-auto" id="searchSlider" tabindex="-1">
+<div class="offcanvas-body" id="searchSliderLabel">
+<div class="searchForm w-100 mb-3">
+<div class="p-2 ps-3 rounded border d-flex align-items-center justify-content-between gap-2">
+<div class="searchicons"><span><i class="bi bi-search fs-4 opacity-75"></i></span></div>
+<div class="flex-fill"><input class="form-control border-0 ps-0" placeholder="What are you looking for?" type="search"/></div>
+<div class="closeSlides"><a aria-label="Close" class="square--35 circle text-muted-2 border" data-bs-dismiss="offcanvas" href="JavaScript:Void(0);"><i class="bi bi-x"></i></a></div>
+</div>
+</div>
+<div class="popularSearches d-flex align-items-center justify-content-center gap-2 flex-wrap">
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+<div class="singleItem"><a class="badge badge-xs badge-primary rounded-pill" href="#">#</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+<!------------Alll Script-------------->
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="../../assets/daan/assets/js/jquery.min.js"></script>
+<script src="../../assets/daan/assets/js/popper.min.js"></script>
+<script src="../../assets/daan/assets/js/bootstrap.min.js"></script>
+<script src="../../assets/daan/assets/js/dropzone.min.js"></script>
+<script src="../../assets/daan/assets/js/counterup.min.js"></script>
+<script src="../../assets/daan/assets/js/rangeslider.js"></script>
+<script src="../../assets/daan/assets/js/select2.min.js"></script>
+<script src="../../assets/daan/assets/js/owl.carousel.min.js"></script>
+<script src="../../assets/daan/assets/js/rome.js"></script>
+<script src="../../assets/daan/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="../../assets/daan/assets/js/custom.js"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- ============================================================== -->
+</div></body></html>
